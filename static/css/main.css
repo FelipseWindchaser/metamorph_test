@@ -1,0 +1,137 @@
+/* html {
+  background-color: white;
+} */
+
+/* Audiowide-Regular */
+@font-face {
+  font-family: "Audiowide";
+  src: url("../vendors/fonts/Audiowide/Audiowide-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Inter_18pt-Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("../vendors/fonts/Inter/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Inter_18pt-SemiBold */
+@font-face {
+  font-family: "Inter";
+  src: url("../vendors/fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Inter_18pt-Medium */
+@font-face {
+  font-family: "Inter";
+  src: url("../vendors/fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Inter_18pt-Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("../vendors/fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Jost-Bold */
+@font-face {
+  font-family: "Jost";
+  src: url("../vendors/fonts/Jost/Jost-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* NotoSans-ExtraBold */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../vendors/fonts/NotoSans/NotoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* NotoSans-SemiBold */
+@font-face {
+  font-family: "NotoSans";
+  src: url("../vendors/fonts/NotoSans/NotoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* NotoSans-Bold */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../vendors/fonts/NotoSans/NotoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* NotoSans-Regular */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../vendors/fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+/* body {
+  margin: 0;
+} */
+
+.main > :not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Noto Sans";
+  /* align-items: center; */
+}
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+} */
+
+.orange-button {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px 47px;
+  background-color: #ff6122;
+  border: none;
+  border-radius: 16px;
+}
+.button-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.button-text {
+  margin: 0;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 140%;
+}
+.bg_blue {
+  background-color: #eaf2fa;
+}
