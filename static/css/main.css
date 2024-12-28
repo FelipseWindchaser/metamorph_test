@@ -92,7 +92,6 @@ h4 {
 /* body {
   margin: 0;
 } */
-
 .main > :not(:first-child) {
   display: flex;
   flex-direction: column;
@@ -116,6 +115,7 @@ h4 {
   background-color: #ff6122;
   border: none;
   border-radius: 16px;
+  text-transform: uppercase;
 }
 .button-content {
   display: flex;
@@ -135,3 +135,5 @@ h4 {
 .bg_blue {
   background-color: #eaf2fa;
 }
+
+/* first page */

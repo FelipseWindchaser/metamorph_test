@@ -19,6 +19,10 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
     {
+      path: "src/pages",
+      pathPrefix: false,
+    },
+    {
       path: "src/content",
       pathPrefix: false,
     },

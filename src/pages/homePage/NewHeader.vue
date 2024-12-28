@@ -252,7 +252,7 @@
   <section class="get-offer">
     <div class="get-offer_text-container">
       <h2 class="get-offer_title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ</h2>
-      <button type="button" class="get-offer_button">
+      <button type="button" class="get-offer_button gray-button">
         ПОЛУЧИТЬ ПРАЙС-ЛИСТ
       </button>
     </div>
@@ -347,7 +347,7 @@
             src="../../../static/img/met-images/Mask group2.png"
             alt="packages_image"
           />
-          <button class="logistics_button orange-button">
+          <button class="logistics_button orange-button" type="button">
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
               <img
@@ -376,7 +376,7 @@
             src="../../../static/img/met-images/Mask group3.png"
             alt="containers_image"
           />
-          <button class="logistics_button orange-button">
+          <button class="logistics_button orange-button" type="button">
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
               <img
@@ -390,21 +390,11 @@
       </div>
     </div>
   </section>
-  <section class="marketplaces">
-    <h3 class="marketplaces_title"></h3>
-    <p class="marketplaces_subtitle"></p>
-    <div class="marketplaces_">
-      <div>
-        <p></p>
-        <img />
-      </div>
-    </div>
-  </section>
   <section class="marketplaces-and-fulfillment">
     <div class="marketplaces-and-fulfillment_text-container">
-      <h3 class="marketplaces-and-fulfillment_title">
+      <h2 class="marketplaces-and-fulfillment_title">
         От грамотного фулфилмента к успешному продвижению на маркетплейсах
-      </h3>
+      </h2>
       <p class="marketplaces-and-fulfillment_subtitle">
         Надежный фулфилмент — это только начало
       </p>
@@ -413,7 +403,11 @@
       <div class="marketplaces-and-fulfillment_card">
         <p class="marketplaces-and-fulfillment_card-number">1</p>
         <div class="marketplaces-and-fulfillment_card-content">
-          <img class="marketplaces-and-fulfillment_card-icon" />
+          <img
+            class="marketplaces-and-fulfillment_card-icon"
+            src="../../../static/img/met-images/hand-package-delivery.png"
+            alt="hand-and-package-icon"
+          />
           <p class="marketplaces-and-fulfillment_card-text">
             Приемка и хранение товаров
           </p>
@@ -422,7 +416,11 @@
       <div class="marketplaces-and-fulfillment_card">
         <p class="marketplaces-and-fulfillment_card-number">2</p>
         <div class="marketplaces-and-fulfillment_card-content">
-          <img class="marketplaces-and-fulfillment_card-icon" />
+          <img
+            class="marketplaces-and-fulfillment_card-icon"
+            src="../../../static/img/met-images/World, Globe, Basket.png"
+            alt="globe-icon"
+          />
           <p class="marketplaces-and-fulfillment_card-text">
             Подготовка к продаже
           </p>
@@ -431,7 +429,11 @@
       <div class="marketplaces-and-fulfillment_card">
         <p class="marketplaces-and-fulfillment_card-number">3</p>
         <div class="marketplaces-and-fulfillment_card-content">
-          <img class="marketplaces-and-fulfillment_card-icon" />
+          <img
+            class="marketplaces-and-fulfillment_card-icon"
+            src="../../../static/img/met-images/browser-cursor-click.png"
+            alt="browser-icon"
+          />
           <p class="marketplaces-and-fulfillment_card-text">
             SEO и рекламные кампании
           </p>
@@ -440,11 +442,316 @@
       <div class="marketplaces-and-fulfillment_card">
         <p class="marketplaces-and-fulfillment_card-number">4</p>
         <div class="marketplaces-and-fulfillment_card-content">
-          <img class="marketplaces-and-fulfillment_card-icon" />
+          <img
+            class="marketplaces-and-fulfillment_card-icon"
+            src="../../../static/img/met-images/message-review-star.png"
+            alt="social-icon"
+          />
           <p class="marketplaces-and-fulfillment_card-text">
             Рост продаж и положительные отзывы
           </p>
         </div>
+      </div>
+    </div>
+    <button
+      class="marketplaces-and-fulfillment_button gray-button"
+      type="button"
+    >
+      Перейти
+    </button>
+  </section>
+  <section class="blue-caption">
+    <p class="blue-caption_text">
+      Наши услуги фулфилмента обеспечивают бесперебойную работу ваших поставок
+      на маркетплейсах, но для увеличения продаж важен правильный маркетинг.
+    </p>
+    <p class="blue-caption_text">
+      Мы предлагаем комплексный подход: от точной доставки до эффективных
+      маркетинговых кампаний на Wildberries и Ozon.
+    </p>
+    <p class="blue-caption_text">
+      Обеспечьте ваш бизнес всем необходимым для успеха на маркетплейсах — от
+      качественного хранения до выхода в топ.
+    </p>
+  </section>
+  <section class="reviews">
+    <h3 class="reviews_title">отзывы и кейсы</h3>
+    <div class="reviews_slider-wrapper">
+      <div class="reviews_slider-arrows-wrapper">
+        <svg
+          class="reviews_slider_left-arrow"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.5 18H28.5"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 25.5L7.5 18"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 10.5L7.5 18"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="reviews_slider">
+        <div class="reviews_slide">
+          <div class="reviews_slide-header">
+            <img
+              class="reviews_slide-photo"
+              src="../../../static/img/met-images/Artem.png"
+              alt="user-icon"
+            />
+            <p class="reviews_slide-title">Артем Федоров</p>
+          </div>
+          <p class="reviews_slide-description">
+            Компания сумела качественно оказать не только услугу по продвижению,
+            но и взяла на себя ряд сопутствующих услуг, такие как оформление и
+            оптимизация карточек, а также настройка и запуск рекламы на
+            маркетплейсах.
+          </p>
+        </div>
+        <div class="reviews_slide">
+          <div class="reviews_slide-header">
+            <img
+              class="reviews_slide-photo"
+              src="../../../static/img/met-images/Ekaterina.png"
+              alt="user-icon"
+            />
+            <p class="reviews_slide-title">Екатерина Кривцун</p>
+          </div>
+          <p class="reviews_slide-description">
+            Компания сумела качественно оказать не только услугу по продвижению,
+            но и взяла на себя ряд сопутствующих услуг, такие как оформление и
+            оптимизация карточек, а также настройка и запуск рекламы на
+            маркетплейсах.
+          </p>
+        </div>
+        <div class="reviews_slide">
+          <div class="reviews_slide-header">
+            <img
+              class="reviews_slide-photo"
+              src="../../../static/img/met-images/Olga.png"
+              alt="user-icon"
+            />
+            <p class="reviews_slide-title">Ольга Заворотная</p>
+          </div>
+          <p class="reviews_slide-description">
+            Компания сумела качественно оказать не только услугу по продвижению,
+            но и взяла на себя ряд сопутствующих услуг, такие как оформление и
+            оптимизация карточек, а также настройка и запуск рекламы на
+            маркетплейсах.
+          </p>
+        </div>
+      </div>
+      <div class="reviews_slider-arrows-wrapper">
+        <svg
+          class="reviews_slider_right-arrow active-arrow"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M28.5 18H7.5"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 25.5L28.5 18"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 10.5L28.5 18"
+            stroke="inherit"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <button class="reviews_button orange-button" type="button">
+      оставить отзыв
+    </button>
+  </section>
+  <section class="faq">
+    <h3 class="faq_title">Популярные вопросы <br />наших клиентов</h3>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">
+          Какая стоимость за использование фулфилмента на маркетплейсах?
+        </p>
+        <p class="faq_card-answer">
+          Стоимость можете уточнить у наших операторов.
+        </p>
+      </div>
+
+      <img
+        class="faq_card-icon rotated-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">Где находится Ваш склад?</p>
+        <p class="faq_card-answer hidden-answer"></p>
+      </div>
+
+      <img
+        class="faq_card-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">
+          Какие документы необходимы для поставки на маркетплейсы?
+        </p>
+        <p class="faq_card-answer hidden-answer"></p>
+      </div>
+
+      <img
+        class="faq_card-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">С какими маркетплейсами сотрудничаете?</p>
+        <p class="faq_card-answer hidden-answer"></p>
+      </div>
+
+      <img
+        class="faq_card-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">
+          Как использовать финансирование от компании?
+        </p>
+        <p class="faq_card-answer hidden-answer"></p>
+      </div>
+
+      <img
+        class="faq_card-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+    <div class="faq_card">
+      <div class="faq_card_text-container">
+        <p class="faq_card-question">Какие условия хранения товара?</p>
+        <p class="faq_card-answer hidden-answer"></p>
+      </div>
+
+      <img
+        class="faq_card-icon"
+        src="../../../static/img/met-images/faq-plus.svg"
+        alt="plus-icon"
+      />
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer-wrapper">
+      <div class="footer_text-container">
+        <div class="footer_text-content_wrapper">
+          <h4 class="footer_title">Остались вопросы? — Свяжитесь с нами</h4>
+          <div class="footer_contacts-container">
+            <div class="footer_contacts_phone footer_contacts">
+              <img
+                class="footer_contacts_phone-icon"
+                src="../../../static/img/met-images/phone-call_icon.svg"
+                alt="phone-icon"
+              />
+              <p class="footer_contacts_text">+374 91 59 8338</p>
+            </div>
+            <div class="footer_contacts_work-time footer_contacts">
+              <img
+                class="footer_contacts_phone-icon"
+                src="../../../static/img/met-images/clocks_icon.svg"
+                alt="clocks-icon"
+              />
+              <p class="footer_contacts_text">9:00 — 18:00</p>
+            </div>
+            <div class="footer_contacts_email footer_contacts">
+              <img
+                class="footer_contacts_phone-icon"
+                src="../../../static/img/met-images/email_icon.svg"
+                alt="email_icon"
+              />
+              <p class="footer_contacts_text">vvx@metamorph.group</p>
+            </div>
+            <div class="footer_contacts_address footer_contacts">
+              <p class="footer_contacts_text">
+                г. Ереван, 3-й квартал Давташен, 19/2
+              </p>
+            </div>
+          </div>
+        </div>
+        <form class="footer_form" name="footer-form">
+          <input
+            class="footer_form-input"
+            name="name"
+            type="text"
+            placeholder="Имя"
+          />
+          <input
+            class="footer_form-input"
+            name="email"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="footer_form-input textarea"
+            name="text"
+            placeholder="Ваш вопрос"
+          ></textarea>
+          <div class="footer_form-checkbox_wrapper">
+            <input class="footer_form-checkbox" type="checkbox" />
+            <p class="footer_form-checkbox_text">
+              Я соглашаюсь с правилами обработки персональных данных.
+            </p>
+          </div>
+
+          <button class="footer_form-button orange-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+      <div class="footer_image-container">
+        <img
+          class="footer_image"
+          src="../../../static/img/met-images/map.jpg"
+          alt="logo"
+        />
       </div>
     </div>
   </section>
@@ -699,7 +1006,7 @@
   /* padding-top: 124px; */
   gap: 85px;
 }
-.get-offer_button {
+.gray-button {
   width: 386px;
   height: 80px;
   color: #181818;
@@ -845,9 +1152,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 75px;
   width: 1440px;
-  height: 556px;
+  height: 811px;
+  background-image: url(../../../static/img/met-images/purple-background.png);
+  background-repeat: no-repeat;
 }
 .marketplaces-and-fulfillment_text-container {
   width: 990px;
@@ -855,16 +1163,18 @@
   flex-direction: column;
   gap: 23px;
   align-items: center;
+  margin-bottom: 75px;
 }
 .marketplaces-and-fulfillment_cards {
   width: 831px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  gap: 44px;
+  margin-bottom: 55px;
 }
 .marketplaces-and-fulfillment_title {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-family: Jost;
   font-size: 48px;
@@ -874,7 +1184,7 @@
   text-transform: uppercase;
 }
 .marketplaces-and-fulfillment_subtitle {
-  color: #000;
+  color: #fff;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -882,13 +1192,14 @@
   margin: 0;
 }
 .marketplaces-and-fulfillment_card {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 105px;
   z-index: 10;
 }
 .marketplaces-and-fulfillment_card-number {
-  /* color: rgba(255, 255, 255, 0.3); */
-  color: orange;
+  color: rgba(255, 255, 255, 0.3);
   font-family: Audiowide;
   font-size: 96px;
   font-style: normal;
@@ -898,4 +1209,290 @@
   position: absolute;
   z-index: -1;
 }
+.marketplaces-and-fulfillment_card-content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  align-items: center;
+  gap: 20px;
+}
+.marketplaces-and-fulfillment_card-text {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 31.2px */
+  margin: 0;
+}
+.blue-caption {
+  margin: 13px auto 110px;
+  display: flex;
+  flex-direction: column;
+  width: 1201px;
+  height: 234px;
+  border: none;
+  background-image: url(../../../static/img/met-images/blue-cloud_img.png);
+  background-repeat: no-repeat;
+  padding: 67px 42px 19px 29px;
+  gap: 10px;
+}
+.blue-caption_text {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  margin: 0;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+}
+.reviews_button {
+  width: 336px;
+  height: 60px;
+  margin: 24px 0 0 120px;
+}
+.reviews_title {
+  color: var(--main, #181818);
+  font-family: Jost;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 1200px;
+  align-self: center;
+  padding-bottom: 40px;
+}
+.reviews_slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.reviews_slider {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 20px;
+}
+.reviews_slide {
+  display: flex;
+  flex-direction: column;
+  width: 387px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #eaf2fa;
+  padding: 19px 24px 19px 19px;
+  gap: 14px;
+}
+.reviews_slide-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.reviews_slide-title {
+  color: var(--main, #181818);
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviews_slide-description {
+  color: var(--main, #181818);
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  margin: 0;
+}
+.reviews_slider-arrows-wrapper {
+  border: 1px solid #cbcbcb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews_slider_left-arrow {
+  stroke: #cbcbcb;
+}
+.reviews_slider_right-arrow {
+  stroke: #cbcbcb;
+}
+.active-arrow {
+  stroke: #181818;
+}
+.faq {
+  margin: 110px auto;
+  width: 1200px;
+}
+.faq_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 18px 0;
+}
+.rotated-icon {
+  transform: rotate(45deg);
+}
+
+.faq_title {
+  color: var(--main, #181818);
+  font-family: Jost;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 53.2px */
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.faq_card_text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq_card-question {
+  color: var(--main, #181818);
+  font-family: "Noto Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.faq_card-answer {
+  color: var(--main, #181818);
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.hidden-answer {
+  display: none;
+}
+.footer {
+  display: flex;
+  width: 1440px;
+  background: linear-gradient(112deg, #2381e3 29.32%, #1862ae 75.85%);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  align-self: center;
+  padding: 66px 0 77px;
+  gap: 63px;
+}
+.footer_contacts_text {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.footer_title {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 41.6px */
+  margin-bottom: 33px;
+}
+.footer_contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+.footer_form {
+  display: flex;
+  flex-direction: column;
+  width: 426px;
+  gap: 14px;
+}
+.footer_text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_image-container {
+  height: 764px;
+}
+.footer_form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.footer_form-input {
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  padding: 15px 18px;
+  color: black;
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer_form-input::placeholder {
+  color: var(--grey-secondary, #b0b0b0);
+  font-family: "Noto Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.textarea {
+  height: 118px;
+  resize: none;
+  padding: 10px 18px;
+}
+.footer_form-checkbox {
+  align-self: flex-start;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.footer_form-checkbox:hover {
+  cursor: pointer;
+}
+.footer_image {
+  border-radius: 16px;
+}
+.footer_form-checkbox_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.footer_form-checkbox_text {
+  color: var(--white, #fff);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 16.9px */
+  margin: 0;
+}
 </style>
+<script lang="ts" setup></script>
