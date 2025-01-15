@@ -1,3 +1,3 @@
 <template>
-  <NewPageComponent />
+  <ThirdPageComponent />
 </template>

@@ -117,6 +117,16 @@ h4 {
   border-radius: 16px;
   text-transform: uppercase;
 }
+.blue-button {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px 47px;
+  background: #64CDFF;
+  border: none;
+  border-radius: 16px;
+  text-transform: uppercase;
+}
 .button-content {
   display: flex;
   gap: 10px;
@@ -135,5 +145,7 @@ h4 {
 .bg_blue {
   background-color: #eaf2fa;
 }
-
+.hidden {
+  display: none;
+}
 /* first page */

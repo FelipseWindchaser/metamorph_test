@@ -1,0 +1,56 @@
+<template>
+  <section class="get-offer">
+    <div class="get-offer_text-container">
+      <h2 class="get-offer_title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ</h2>
+      <button type="button" class="get-offer_button gray-button">
+        ПОЛУЧИТЬ ПРАЙС-ЛИСТ
+      </button>
+    </div>
+
+    <div class="get-offer_image-container">
+      <img src="../../../static/img/met-images/offer.png" alt="offer_image" />
+    </div>
+  </section>
+</template>
+<style scoped>
+.get-offer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 75px;
+  width: 1440px;
+  height: 556px;
+  background: linear-gradient(112deg, #2381e3 29.32%, #1862ae 75.85%);
+}
+.get-offer_title {
+  font-family: Jost;
+  color: white;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 75.6px */
+  text-transform: uppercase;
+}
+.get-offer_text-container {
+  width: 474px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 124px; */
+  gap: 85px;
+}
+.gray-button {
+  width: 386px;
+  height: 80px;
+  color: #181818;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 16px;
+  padding: 0;
+  border: none;
+}
+@media (min-width: 375px) and (max-width: 680px) {
+}
+</style>

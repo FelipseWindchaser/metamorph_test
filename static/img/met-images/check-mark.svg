@@ -1,0 +1,16 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Interface, Essential/Done, Check">
+<g id="Group">
+<g id="Group_2">
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M25 43.75C14.6437 43.75 6.25 35.3562 6.25 25C6.25 14.6437 14.6437 6.25 25 6.25C35.3562 6.25 43.75 14.6437 43.75 25C43.75 35.3562 35.3562 43.75 25 43.75Z" fill="url(#paint0_linear_264_757)"/>
+<path id="Path_2" d="M33.3337 20.8334L22.917 31.25L16.667 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_264_757" x1="13" y1="6" x2="33" y2="44" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3792FF"/>
+<stop offset="1" stop-color="#0041C8"/>
+</linearGradient>
+</defs>
+</svg>
