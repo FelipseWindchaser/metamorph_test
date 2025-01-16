@@ -46,7 +46,10 @@
 
         <div class="header_menu-button_mob">
           <svg
-            class="header_menu-button_mob_closed"
+            @click="openNav"
+            :class="`header_menu-button_mob_nav-${
+              isNavOpen ? 'opened' : 'closed'
+            } `"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -76,7 +79,10 @@
             />
           </svg>
           <svg
-            class="header_menu-button_mob_opened"
+            @click="closeNav"
+            :class="`header_menu-button_mob_nav-${
+              !isNavOpen ? 'opened' : 'closed'
+            } `"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
@@ -100,7 +106,7 @@
           </svg>
         </div>
       </div>
-      <div class="header_menu_mob">
+      <div :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`">
         <!-- add active to header_menu_mob -->
         <a href="#" class="header_menu-link">Главная</a>
         <a
@@ -111,6 +117,7 @@
         <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a>
         <a href="#faq" class="header_menu-link">Вопросы и ответы</a>
         <button
+          @click="() => openPopup()"
           type="button"
           :class="`header_menu-button ${
             homepage ? ' orange-button' : ' blue-button'
@@ -123,6 +130,14 @@
   </section>
 </template>
 <script setup lang="ts">
+const isNavOpen = ref(false);
+const openNav = () => {
+  isNavOpen.value = true;
+  console.log(isNavOpen);
+};
+const closeNav = () => {
+  isNavOpen.value = false;
+};
 defineProps<{
   homepage: boolean;
   openPopup: (title?: string) => void;
@@ -178,6 +193,11 @@ defineProps<{
     flex-direction: column;
     padding: 36px 0 0 16px;
     gap: 30px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    background: #fff;
   }
   .active {
     display: flex;
@@ -222,8 +242,9 @@ defineProps<{
     align-items: center;
     width: 100%;
     padding: 17px 16px;
+    z-index: 2;
   }
-  .header_menu-button_mob_opened {
+  .header_menu-button_mob_nav-opened {
     display: none;
   }
   .hidden {

@@ -32,7 +32,6 @@ const openPopup = (title?: string) => {
   const body = document.querySelector("body");
   if (body) {
     body.classList.add("scroll-off");
-    console.log(body);
   }
 };
 
@@ -41,7 +40,6 @@ const closePopup = () => {
   const body = document.querySelector("body");
   if (body) {
     body.classList.remove("scroll-off");
-    console.log(body);
   }
 };
 </script>
