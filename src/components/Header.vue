@@ -72,6 +72,7 @@
         </div>
       </div>
       <div class="header_menu_mob">
+        <!-- add active to header_menu_mob -->
         <a href="#" class="header_menu-link">Главная</a>
         <a href="#" class="header_menu-link">О нас</a>
         <a href="#" class="header_menu-link">Отзывы и кейсы</a>
@@ -138,9 +139,9 @@
   .header_menu-button {
     margin-bottom: 60px;
   }
-  /* .header_menu-button_mob {
+  .header_menu-button_mob {
     display: flex;
-  } */
+  }
   /* .header_menu-link {
     color: var(--main, #181818);
     font-family: "Noto Sans";
