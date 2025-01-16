@@ -1,5 +1,5 @@
 <template>
-  <section class="faq">
+  <section class="faq" id="faq">
     <h3 class="faq_title">Популярные вопросы <br />наших клиентов</h3>
     <div class="faq_card">
       <div class="faq_card_text-container">
