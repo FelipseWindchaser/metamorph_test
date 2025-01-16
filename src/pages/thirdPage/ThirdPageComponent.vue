@@ -1,11 +1,11 @@
 <template>
-  <Header :homepage="false" :openPopup="openPopup" />
   <FormPopup
     :homepage="false"
     :isOpen="isPopupOpen"
     :closePopup="closePopup"
     :popupTitle="popupTitle"
   />
+  <Header :homepage="false" :openPopup="openPopup" />
   <IntroMs :openPopup="openPopup" />
   <Presentation :openPopup="openPopup" />
   <Benefits :openPopup="openPopup" />
@@ -24,9 +24,21 @@ const popupTitle = ref("Получить консультацию");
 const openPopup = (title?: string) => {
   isPopupOpen.value = true;
   popupTitle.value = title || "Получить консультацию";
+
+  const body = document.querySelector("body");
+  if (body) {
+    body.classList.add("scroll-off");
+    console.log(body);
+  }
 };
+
 const closePopup = () => {
   isPopupOpen.value = false;
+  const body = document.querySelector("body");
+  if (body) {
+    body.classList.remove("scroll-off");
+    console.log(body);
+  }
 };
 </script>
 

@@ -75,8 +75,9 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  /* position: fixed; */
+  /* position: absolute; */
+  position: fixed;
+  z-index: 9999;
   /* background-color: #000; */
 }
 .popup_overlay {
@@ -191,8 +192,15 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    position: absolute;
     padding: 0 16px;
+  }
+  .popup_overlay {
+    background-color: #000c;
+    opacity: 0.5;
+    width: 100vw;
+    height: calc(100vh + 200px);
+    position: absolute;
+    z-index: 999;
   }
   .popup_wrapper {
     display: flex;

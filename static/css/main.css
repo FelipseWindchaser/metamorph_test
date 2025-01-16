@@ -152,4 +152,7 @@ h4 {
 .hidden {
   display: none;
 }
+.scroll-off {
+  overflow-y: hidden;
+}
 /* first page */
