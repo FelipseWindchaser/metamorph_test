@@ -90,11 +90,20 @@
         </p>
       </div>
     </div>
-    <button class="marketplaces-and-fulfillment_button" type="button">
+    <button
+      @click="() => openPopup('Свяжитесь с нами')"
+      class="marketplaces-and-fulfillment_button"
+      type="button"
+    >
       Перейти
     </button>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .marketplaces-and-fulfillment {
   display: flex;
@@ -186,6 +195,10 @@
   border: none;
   justify-content: center;
   align-items: center;
+}
+.marketplaces-and-fulfillment_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .marketplaces-and-fulfillment_card-text_mob {
   display: none;

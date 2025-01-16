@@ -1,5 +1,5 @@
 <template>
-  <section class="presentation">
+  <section class="presentation" id="presentation">
     <h3 class="presentation_title section-title">
       Почему «МойСклад» — идеальное решение для вашего бизнеса?
     </h3>
@@ -85,10 +85,21 @@
           Узнать больше о возможностях «МойСклад»
         </p>
       </div>
-      <button class="learn-more_button" type="button">Узнать больше</button>
+      <button
+        @click="() => openPopup('Узнать больше')"
+        class="learn-more_button"
+        type="button"
+      >
+        Узнать больше
+      </button>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .presentation {
@@ -209,6 +220,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.learn-more_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .presentation {

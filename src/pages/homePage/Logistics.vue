@@ -35,7 +35,11 @@
             src="../../../static/img/met-images/Mask group2.png"
             alt="packages_image"
           /> -->
-          <button class="logistics_button orange-button" type="button">
+          <button
+            @click="() => openPopup('Получить предложение')"
+            class="logistics_button orange-button"
+            type="button"
+          >
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
               <img
@@ -77,7 +81,11 @@
             src="../../../static/img/met-images/Mask group3.png"
             alt="containers_image"
           /> -->
-          <button class="logistics_button orange-button" type="button">
+          <button
+            @click="() => openPopup('Получить предложение')"
+            class="logistics_button orange-button"
+            type="button"
+          >
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
               <img
@@ -92,6 +100,11 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .logistics {
   display: flex;
@@ -159,6 +172,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.logistics_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .logistics {

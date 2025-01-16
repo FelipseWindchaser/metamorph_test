@@ -1,5 +1,5 @@
 <template>
-  <section class="about-us">
+  <section class="about-us" id="about-us">
     <div class="about-us_text-container">
       <p class="about-us_title">КАК МЫ РАБОТАЕМ: ЭТАПЫ ФУЛФИЛМЕНТА</p>
     </div>

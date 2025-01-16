@@ -68,7 +68,11 @@
           </p>
         </li>
         <li class="benefits_list-item">
-          <button class="benefits_button" type="button">
+          <button
+            @click="() => openPopup('Получить консультацию')"
+            class="benefits_button"
+            type="button"
+          >
             Получить консультацию
           </button>
         </li>
@@ -76,6 +80,11 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .benefits {
@@ -140,6 +149,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.benefits_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .benefits {

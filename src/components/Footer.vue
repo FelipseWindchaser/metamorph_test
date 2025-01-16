@@ -149,6 +149,10 @@
   align-items: center;
   height: 60px;
 }
+.footer_form-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .footer_form-input {
   border-radius: 16px;
   border: none;

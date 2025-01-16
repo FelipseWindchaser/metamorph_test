@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <h3 class="reviews_title">отзывы и кейсы</h3>
     <div class="reviews_slider-wrapper">
       <div
@@ -137,6 +137,10 @@
   height: 60px;
   margin: 24px 0 0 120px;
 }
+.reviews_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .reviews_title {
   color: var(--main, #181818);
   font-family: Jost;
@@ -203,6 +207,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.reviews_slider-arrows-wrapper:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .reviews_slider_left-arrow {
   stroke: #cbcbcb;

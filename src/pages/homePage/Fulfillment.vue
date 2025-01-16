@@ -81,13 +81,22 @@
           </p>
         </div>
 
-        <button type="button" class="fulfillment_button orange-button">
+        <button
+          @click="() => openPopup('Свяжитесь с нами')"
+          type="button"
+          class="fulfillment_button orange-button"
+        >
           СВЯЖИТЕСЬ С НАМИ
         </button>
       </div>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .fulfillment {
   padding-bottom: 110px;
@@ -133,6 +142,10 @@
 .fulfillment_button {
   padding: 17px 73px;
   font-size: 18px;
+}
+.fulfillment_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .fulfillment {

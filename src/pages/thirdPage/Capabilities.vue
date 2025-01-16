@@ -71,7 +71,12 @@
           <p class="capabilities_card-title">
             Запросить демонстрацию возможностей
           </p>
-          <button class="capabilities_card-button">Запросить</button>
+          <button
+            @click="() => openPopup('Получить консультацию')"
+            class="capabilities_card-button"
+          >
+            Запросить
+          </button>
         </div>
       </div>
       <div
@@ -146,10 +151,20 @@
       <p class="capabilities_card-title capabilities_card-title_mob">
         Запросить демонстрацию возможностей
       </p>
-      <button class="capabilities_card-button">Запросить</button>
+      <button
+        @click="() => openPopup('Получить консультацию')"
+        class="capabilities_card-button"
+      >
+        Запросить
+      </button>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .capabilities {
@@ -269,6 +284,10 @@
   line-height: normal;
   border: none;
   margin-top: 30px;
+}
+.capabilities_card-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .capabilities_card-image_g2 {
   width: 170px;

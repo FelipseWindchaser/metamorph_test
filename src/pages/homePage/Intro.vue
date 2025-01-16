@@ -47,7 +47,11 @@
         </picture>
       </div>
 
-      <button type="button" class="intro_button orange-button">
+      <button
+        @click="() => openPopup('Получить предложение')"
+        type="button"
+        class="intro_button orange-button"
+      >
         <div class="button-content">
           <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
           <img
@@ -130,6 +134,10 @@
   bottom: 0;
   left: 0;
 }
+.intro_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 @media (min-width: 320px) and (max-width: 680px) {
   .intro {
     padding: 19px 16px 70px;
@@ -187,3 +195,8 @@
   }
 }
 </style>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>

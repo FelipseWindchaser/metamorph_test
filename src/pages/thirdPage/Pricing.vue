@@ -172,7 +172,11 @@
           </td>
           <td class="pricing_table-data"></td>
           <td colspan="2" class="pricing_table-data">
-            <button class="table-button" type="button">
+            <button
+              @click="() => openPopup('Попробовать бесплатно')"
+              class="table-button"
+              type="button"
+            >
               Начать бесплатный пробный период
             </button>
           </td>
@@ -254,7 +258,11 @@
             <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
               *14 дней бесплатного пробного периода для любого из тарифов
             </p>
-            <button class="table-button slider-button" type="button">
+            <button
+              @click="() => openPopup('Попробовать бесплатно')"
+              class="table-button slider-button"
+              type="button"
+            >
               Начать бесплатный пробный период
             </button>
           </div>
@@ -323,7 +331,11 @@
             <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
               *14 дней бесплатного пробного периода для любого из тарифов
             </p>
-            <button class="table-button slider-button" type="button">
+            <button
+              @click="() => openPopup('Попробовать бесплатно')"
+              class="table-button slider-button"
+              type="button"
+            >
               Начать бесплатный пробный период
             </button>
           </div>
@@ -392,7 +404,11 @@
             <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
               *14 дней бесплатного пробного периода для любого из тарифов
             </p>
-            <button class="table-button slider-button" type="button">
+            <button
+              @click="() => openPopup('Попробовать бесплатно')"
+              class="table-button slider-button"
+              type="button"
+            >
               Начать бесплатный пробный период
             </button>
           </div>
@@ -456,7 +472,11 @@
             <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
               *14 дней бесплатного пробного периода для любого из тарифов
             </p>
-            <button class="table-button slider-button" type="button">
+            <button
+              @click="() => openPopup('Попробовать бесплатно')"
+              class="table-button slider-button"
+              type="button"
+            >
               Начать бесплатный пробный период
             </button>
           </div>
@@ -465,6 +485,11 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .pricing {
@@ -543,6 +568,10 @@
   font-weight: 700;
   line-height: normal;
   border: none;
+}
+.table-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .pricing_slider {
   display: none;
@@ -628,7 +657,6 @@
     display: flex;
     width: 314px;
     height: 50px;
-
     justify-content: center;
     align-items: center;
     gap: 10px;

@@ -1,8 +1,9 @@
 <template>
-  <div class="popup">
-    <div class="popup_overlay"></div>
+  <div :class="['popup', isOpen && 'active']">
+    <div class="popup_overlay" @click="closePopup"></div>
     <div class="popup_wrapper">
       <svg
+        @click="closePopup"
         class="popup_cross-icon"
         xmlns="http://www.w3.org/2000/svg"
         width="42"
@@ -26,7 +27,7 @@
         />
       </svg>
       <div class="popup_content">
-        <h3 class="popup_title">Получить консультацию</h3>
+        <h3 class="popup_title">{{ popupTitle }}</h3>
         <!-- or Попробовать бесплатно  -->
         <form class="popup_form" name="popup-form">
           <input
@@ -75,6 +76,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  /* position: fixed; */
   /* background-color: #000; */
 }
 .popup_overlay {
@@ -178,6 +180,10 @@
   top: 17px;
   right: 17px;
 }
+.popup_cross-icon:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 @media (min-width: 320px) and (max-width: 680px) {
   .popup {
     display: display;
@@ -226,5 +232,8 @@
 <script setup lang="ts">
 defineProps<{
   homepage: boolean;
+  isOpen: boolean;
+  closePopup: () => void;
+  popupTitle: string;
 }>();
 </script>

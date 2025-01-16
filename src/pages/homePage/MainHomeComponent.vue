@@ -1,38 +1,34 @@
 <template>
-  <Header :homepage="true" />
-  <FormPopup :homepage="true" />
-  <Intro />
-  <Fulfillment />
+  <Header :homepage="true" :openPopup="openPopup" />
+  <FormPopup
+    :homepage="true"
+    :isOpen="isPopupOpen"
+    :closePopup="closePopup"
+    :popupTitle="popupTitle"
+  />
+  <Intro :openPopup="openPopup" />
+  <Fulfillment :openPopup="openPopup" />
   <AboutUs />
-  <GetOffer />
+  <GetOffer :openPopup="openPopup" />
   <FulfillmentAdvantages />
-  <Logistics />
-  <Marketplaces />
+  <Logistics :openPopup="openPopup" />
+  <Marketplaces :openPopup="openPopup" />
   <BlueCaption />
   <Reviews />
   <Faq :homepage="true" />
   <Footer :homepage="true" />
 </template>
 
-<style scoped>
-/* .header_container {
-  font-family: "Noto Sans";
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 120px;
-  box-shadow: 0 6px 16px #00000014;
-} */
-/* .header_menu {
-  display: flex;
-  gap: 45px;
-  align-items: center;
-}
-.header_menu-link {
-  text-decoration: none;
-  color: #181818;
-  font-size: 15px;
-  line-height: 130%;
-  font-weight: 400;
-} */
-</style>
-<script lang="ts" setup></script>
+<style scoped></style>
+<script lang="ts" setup>
+const isPopupOpen = ref(false);
+const popupTitle = ref("Получить консультацию");
+
+const openPopup = (title?: string) => {
+  isPopupOpen.value = true;
+  popupTitle.value = title || "Получить консультацию";
+};
+const closePopup = () => {
+  isPopupOpen.value = false;
+};
+</script>

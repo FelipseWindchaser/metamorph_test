@@ -2,7 +2,11 @@
   <section class="get-offer">
     <div class="get-offer_text-container">
       <h2 class="get-offer_title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ</h2>
-      <button type="button" class="get-offer_button">
+      <button
+        @click="() => openPopup('Получить прайс-лист')"
+        type="button"
+        class="get-offer_button"
+      >
         ПОЛУЧИТЬ ПРАЙС-ЛИСТ
       </button>
     </div>
@@ -19,6 +23,11 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .get-offer {
   display: flex;
@@ -57,6 +66,10 @@
   border-radius: 16px;
   padding: 0;
   border: none;
+}
+.get-offer_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .get-offer {

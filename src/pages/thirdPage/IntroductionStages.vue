@@ -93,7 +93,11 @@
             fill="#64CDFF"
           />
         </svg>
-        <button class="benefits_button" type="button">
+        <button
+          @click="() => openPopup('Получить консультацию')"
+          class="introduction-stages_button"
+          type="button"
+        >
           Получить консультацию
         </button>
       </div>
@@ -227,11 +231,223 @@
         </div>
       </div>
     </div>
-    <button class="benefits_button benefits_button_mob" type="button">
+    <button
+      @click="() => openPopup('Получить консультацию')"
+      class="introduction-stages_button introduction-stages_button_mob"
+      type="button"
+    >
       Получить консультацию
     </button>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
+<!-- <style scoped>
+.introduction-stages {
+  width: 1200px;
+  padding-bottom: 130px;
+}
+
+.introduction-stages_title {
+  text-transform: uppercase;
+  font-family: Jost;
+  color: #181818;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 53.2px;
+  width: 526px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.introduction-stages_cards-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  align-items: center;
+  margin: 18px 0;
+  padding-left: 70px;
+}
+.introduction-stages_cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.introduction-stages_cards {
+  display: flex;
+}
+.introduction-stages_card-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.introduction-stages_card-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  line-height: 130%;
+  gap: 10px;
+}
+.introduction-stages_wrapper_mob {
+  display: none;
+}
+
+.introduction-stages_card-title {
+  margin: 0;
+  font-weight: bold;
+}
+.introduction-stages_card-description {
+  margin: 0;
+}
+.introduction-stages_numbers-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0 16px 120px;
+}
+.introduction-stages_number-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(152deg, #3792ff 5.77%, #0041c8 90.55%);
+  color: white;
+  border-radius: 50%;
+  z-index: 5;
+}
+.introduction-stages_odd-cards {
+  gap: 207px;
+  align-self: flex-start;
+}
+.introduction-stages_even-cards {
+  gap: 208px;
+  padding-left: 200px;
+}
+.introduction-stages_button {
+  display: flex;
+  width: 262px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #64cdff;
+  border: none;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.introduction-stages_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.introduction-stages_button_mob {
+  display: none;
+}
+.is_card-1 {
+  width: 203px;
+}
+.is_card-3 {
+  width: 242px;
+}
+.is_card-2 {
+  width: 209px;
+}
+.is_card-4 {
+  width: 233px;
+}
+@media (min-width: 680px) and (max-width: 680px) {
+  .introduction-stages {
+    width: 375px;
+    padding: 0 16px 60px;
+  }
+  .introduction-stages_title {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .introduction-stages_cards-wrapper {
+    display: none;
+  }
+  .introduction-stages_wrapper_mob {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+  .introduction-stages_cards-numbers {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .introduction-stages_number-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+  .introduction-stages_card-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+    line-height: 130%;
+    gap: 10px;
+  }
+  .introduction-stages_card-title {
+    font-size: 17px;
+  }
+  .is_card-1 {
+    width: 100%;
+    /* padding: 0 0 55px 0 */
+    padding-bottom: 55px;
+  }
+  .is_card-3 {
+    width: 100%;
+    padding-bottom: 77px;
+  }
+  .is_card-2 {
+    width: 100%;
+    padding-bottom: 77px;
+  }
+  .is_card-4 {
+    width: 100%;
+    padding-bottom: 55px;
+  }
+  .introduction-stages_button_mob {
+    display: flex;
+    width: 342px;
+    height: 50px;
+    padding: 22px 65px 20px 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+}
+</style> -->
 <style scoped>
 .introduction-stages {
   width: 1200px;
@@ -319,7 +535,7 @@
   gap: 208px;
   padding-left: 200px;
 }
-.benefits_button {
+.introduction-stages_button {
   display: flex;
   width: 262px;
   height: 60px;
@@ -338,7 +554,11 @@
   font-weight: 700;
   line-height: normal;
 }
-.benefits_button_mob {
+.introduction-stages_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.introduction-stages_button_mob {
   display: none;
 }
 .is_card-1 {
@@ -419,7 +639,7 @@
     width: 100%;
     padding-bottom: 55px;
   }
-  .benefits_button_mob {
+  .introduction-stages_button_mob {
     display: flex;
     width: 342px;
     height: 50px;

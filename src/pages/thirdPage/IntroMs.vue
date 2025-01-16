@@ -27,13 +27,28 @@
       </div>
     </div>
     <div class="intro_buttons-container">
-      <button class="intro_button" type="button">Получить консультацию</button>
-      <button class="intro_button transparent-button" type="button">
+      <button
+        @click="() => openPopup('Получить консультацию')"
+        class="intro_button"
+        type="button"
+      >
+        Получить консультацию
+      </button>
+      <button
+        @click="() => openPopup('Попробовать бесплатно')"
+        class="intro_button transparent-button"
+        type="button"
+      >
         Попробовать бесплатно 14 дней
       </button>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .intro {
@@ -90,6 +105,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.intro_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .transparent-button {
   background: none;

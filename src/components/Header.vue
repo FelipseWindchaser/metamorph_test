@@ -13,10 +13,15 @@
       <nav class="header_nav">
         <div class="header_menu">
           <a href="#" class="header_menu-link">Главная</a>
-          <a href="#" class="header_menu-link">О нас</a>
-          <a href="#" class="header_menu-link">Отзывы и кейсы</a>
-          <a href="#" class="header_menu-link">Вопросы и ответы</a>
+          <a
+            class="header_menu-link"
+            :href="` ${homepage ? ' #about-us' : ' #presentation'} `"
+            >О нас</a
+          >
+          <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a>
+          <a href="#faq" class="header_menu-link">Вопросы и ответы</a>
           <button
+            @click="() => openPopup()"
             type="button"
             :class="`header_menu-button ${
               homepage ? ' orange-button' : ' blue-button'
@@ -41,6 +46,7 @@
 
         <div class="header_menu-button_mob">
           <svg
+            class="header_menu-button_mob_closed"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -69,14 +75,41 @@
               stroke-linejoin="round"
             />
           </svg>
+          <svg
+            class="header_menu-button_mob_opened"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <path
+              d="M6.25 6.25L23.75 23.75"
+              stroke="#B8B8B8"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M23.75 6.25L6.25 23.75"
+              stroke="#B8B8B8"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
       </div>
       <div class="header_menu_mob">
         <!-- add active to header_menu_mob -->
         <a href="#" class="header_menu-link">Главная</a>
-        <a href="#" class="header_menu-link">О нас</a>
-        <a href="#" class="header_menu-link">Отзывы и кейсы</a>
-        <a href="#" class="header_menu-link">Вопросы и ответы</a>
+        <a
+          class="header_menu-link"
+          :href="` ${homepage ? ' #about-us' : ' #presentation'} `"
+          >О нас</a
+        >
+        <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a>
+        <a href="#faq" class="header_menu-link">Вопросы и ответы</a>
         <button
           type="button"
           :class="`header_menu-button ${
@@ -89,6 +122,12 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  homepage: boolean;
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .header_container_pc {
   font-family: "Noto Sans";
@@ -113,6 +152,10 @@
   gap: 10px;
   flex-shrink: 0;
 }
+.header_menu-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .header_menu-button_mob {
   display: none;
 }
@@ -125,6 +168,9 @@
 }
 .header_container_mob {
   display: none;
+}
+.header_menu-link:hover {
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .header_menu_mob {
@@ -177,10 +223,11 @@
     width: 100%;
     padding: 17px 16px;
   }
+  .header_menu-button_mob_opened {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
 }
 </style>
-<script setup lang="ts">
-defineProps<{
-  homepage: boolean;
-}>();
-</script>

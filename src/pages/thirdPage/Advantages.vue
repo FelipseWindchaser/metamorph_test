@@ -49,15 +49,32 @@
       </div>
       <div class="advantages_card advantages_card_pc">
         <p class="advantages_card-title">Узнать больше о преимуществах</p>
-        <button class="advantages-button" type="button">Узнать больше</button>
+        <button
+          @click="() => openPopup('Узнать больше')"
+          class="advantages-button"
+          type="button"
+        >
+          Узнать больше
+        </button>
       </div>
     </div>
     <div class="advantages_card advantages_card_mob">
       <p class="advantages_card-title">Узнать больше о преимуществах</p>
-      <button class="advantages-button" type="button">Узнать больше</button>
+      <button
+        @click="() => openPopup('Узнать больше')"
+        class="advantages-button"
+        type="button"
+      >
+        Узнать больше
+      </button>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .advantages {
@@ -159,6 +176,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.advantages-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .advantages {
