@@ -110,10 +110,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 39.2px */
-    width: 343px;
+    /* width: 343px; */
+    width: 100%;
   }
   .intro_description-wrapper {
-    width: 343px;
+    /* width: 343px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -134,7 +136,8 @@
     gap: 14px;
   }
   .intro_button {
-    width: 343px;
+    /* width: 343px; */
+    width: 100%;
     height: 50px;
   }
 }
