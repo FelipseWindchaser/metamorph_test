@@ -295,7 +295,7 @@
 .capabilities_card-7_mob {
   display: none;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .capabilities_cards {
     gap: 10px;
   }

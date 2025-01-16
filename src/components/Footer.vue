@@ -201,7 +201,7 @@
   line-height: 130%; /* 16.9px */
   margin: 0;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .footer {
     display: flex;
     width: 375px;

@@ -547,7 +547,7 @@
 .pricing_slider {
   display: none;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .pricing {
     width: 375px;
     margin-bottom: 60px;
@@ -642,6 +642,7 @@
     line-height: normal;
   }
   .pricing_slider {
+    display: flex;
     position: relative;
   }
   .pricing_slider_arrows {

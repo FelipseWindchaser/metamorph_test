@@ -210,7 +210,7 @@
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .presentation {
     width: 375px;
     padding: 50px 16px 60px;

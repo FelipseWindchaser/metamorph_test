@@ -17,11 +17,24 @@
           </p>
         </div>
         <div class="logistics_image-container">
-          <img
+          <picture>
+            <source
+              media="(max-width: 680px)"
+              class="logistics_image"
+              srcset="../../../static/img/met-images/packages_mob.png"
+              alt="packages_image"
+            />
+            <img
+              class="logistics_image"
+              src="../../../static/img/met-images/Mask group2.png"
+              alt="packages_image"
+            />
+          </picture>
+          <!-- <img
             class="logistics_image"
             src="../../../static/img/met-images/Mask group2.png"
             alt="packages_image"
-          />
+          /> -->
           <button class="logistics_button orange-button" type="button">
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
@@ -46,11 +59,24 @@
           </p>
         </div>
         <div class="logistics_image-container">
-          <img
+          <picture>
+            <source
+              media="(max-width: 680px)"
+              class="logistics_image"
+              srcset="../../../static/img/met-images/containers_mob.png"
+              alt="packages_image"
+            />
+            <img
+              class="logistics_image"
+              src="../../../static/img/met-images/Mask group3.png"
+              alt="packages_image"
+            />
+          </picture>
+          <!-- <img
             class="logistics_image"
             src="../../../static/img/met-images/Mask group3.png"
             alt="containers_image"
-          />
+          /> -->
           <button class="logistics_button orange-button" type="button">
             <div class="button-content">
               <p class="button-text">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</p>
@@ -134,6 +160,48 @@
   bottom: 0;
   right: 0;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
+  .logistics {
+    display: flex;
+    width: 375px;
+    padding: 0 16px 70px;
+  }
+  .logistics_title {
+    padding-bottom: 24px;
+    width: 100%;
+  }
+  .logistics_subtitle {
+    font-size: 17px;
+  }
+  .logistics_description {
+    font-size: 15px;
+  }
+  .logistics_text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .logistics_wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .logistics_image-container {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .logistics_image {
+    width: 100%;
+  }
+  .logistics_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    padding: 17px 30px 18px 30px;
+    margin-top: 16px;
+  }
 }
 </style>

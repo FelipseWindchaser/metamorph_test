@@ -2,6 +2,29 @@
   <div class="popup">
     <div class="popup_overlay"></div>
     <div class="popup_wrapper">
+      <svg
+        class="popup_cross-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="42"
+        viewBox="0 0 42 42"
+        fill="none"
+      >
+        <path
+          d="M8.75 8.75L33.25 33.25"
+          stroke="#B8B8B8"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M33.25 8.75L8.75 33.25"
+          stroke="#B8B8B8"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
       <div class="popup_content">
         <h3 class="popup_title">Получить консультацию</h3>
         <!-- or Попробовать бесплатно  -->
@@ -51,16 +74,16 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   /* background-color: #000; */
 }
 .popup_overlay {
   background-color: #000c;
-  opacity: 0.1;
+  opacity: 0.5;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: -1;
+  z-index: 999;
 }
 .popup_wrapper {
   display: flex;
@@ -70,6 +93,8 @@
   height: 471px;
   border-radius: 24px;
   background: var(--white, #fff);
+  z-index: 9999;
+  position: relative;
 }
 .popup_title {
   color: #181818;
@@ -98,6 +123,7 @@
   height: 60px;
 }
 .popup_form-input {
+  height: 50px;
   border-radius: 16px;
   border: none;
   outline: none;
@@ -146,6 +172,55 @@
 }
 .active {
   display: flex;
+}
+.popup_cross-icon {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+@media (min-width: 320px) and (max-width: 680px) {
+  .popup {
+    display: display;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    padding: 0 16px;
+  }
+  .popup_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 49px 20px 24px;
+    height: 434px;
+    border-radius: 24px;
+    background: var(--white, #fff);
+    z-index: 9999;
+  }
+  .popup_title {
+    color: #181818;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 41.6px */
+    padding-bottom: 30px;
+  }
+  .popup_form-checkbox {
+    align-self: center;
+  }
+  .popup_form-button {
+    font-size: 18px;
+  }
+  .popup_cross-icon {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>
 <script setup lang="ts">

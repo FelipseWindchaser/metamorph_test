@@ -134,7 +134,7 @@
   padding: 17px 73px;
   font-size: 18px;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .fulfillment {
     padding-bottom: 70px;
     display: flex;

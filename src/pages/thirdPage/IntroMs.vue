@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   max-width: 1440px;
   /* height: 643px; */
-  padding: 61px 120px 89px;
+  padding: 61px 120px 89px 120px;
 }
 .intro_title {
   color: #fff;
@@ -95,7 +95,7 @@
   background: none;
   border: 1px solid #fff;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .intro {
     background-image: url(../../../static/img/met-images/intro_p3_mob.png);
     background-repeat: no-repeat;

@@ -126,6 +126,42 @@
   right: 10px;
   z-index: -1;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
+  .fulfillment-advantages {
+    padding: 70px 16px;
+    width: 375px;
+    display: flex;
+    gap: 24px;
+  }
+  .fulfillment-advantages_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 auto;
+  }
+  .fulfillment-advantages_title {
+    padding-left: 0;
+    font-size: 24px;
+  }
+  .fulfillment-advantages_card {
+    width: 100%;
+    height: 208px;
+    padding: 18px 18px 0 18px;
+    font-size: 15px;
+  }
+  .fulfillment-advantages_card-title {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 17px;
+  }
+  .fulfillment-advantages_card-description {
+    width: 100%;
+    font-size: 15px;
+  }
+  .fulfillment-advantages_card-number {
+    font-size: 100px;
+    bottom: 46px;
+    right: 11px;
+  }
 }
 </style>

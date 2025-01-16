@@ -135,7 +135,7 @@
 .hidden-answer {
   display: none;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .faq {
     margin: 60px auto;
     width: 375px;

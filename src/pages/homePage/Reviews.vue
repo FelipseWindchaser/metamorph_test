@@ -2,7 +2,9 @@
   <section class="reviews">
     <h3 class="reviews_title">отзывы и кейсы</h3>
     <div class="reviews_slider-wrapper">
-      <div class="reviews_slider-arrows-wrapper">
+      <div
+        class="reviews_slider-arrows-wrapper reviews_slider-arrows-wrapper_mob"
+      >
         <svg
           class="reviews_slider_left-arrow"
           width="36"
@@ -84,7 +86,9 @@
           </p>
         </div>
       </div>
-      <div class="reviews_slider-arrows-wrapper">
+      <div
+        class="reviews_slider-arrows-wrapper reviews_slider-arrows-wrapper_mob"
+      >
         <svg
           class="reviews_slider_right-arrow active-arrow"
           width="36"
@@ -209,6 +213,47 @@
 .active-arrow {
   stroke: #181818;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
+  .reviews_slider-arrows-wrapper_mob {
+    display: none;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    padding-left: 16px;
+  }
+  .reviews_title {
+    font-size: 24px;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .reviews_button {
+    width: 336px;
+    height: 60px;
+    margin: 14px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews_slide {
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #eaf2fa;
+    padding: 19px 24px 19px 19px;
+    gap: 14px;
+  }
+  .reviews_slider {
+    gap: 14px;
+  }
+  .reviews_slide-title {
+    font-size: 17px;
+  }
+  .reviews_slide-description {
+    font-size: 15px;
+  }
 }
 </style>

@@ -160,7 +160,7 @@
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .advantages {
     width: 375px;
     padding: 0 16px 60px;

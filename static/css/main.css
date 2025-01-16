@@ -1,7 +1,9 @@
 /* html {
   background-color: white;
 } */
-
+/* body {
+  position: relative;
+} */
 /* Audiowide-Regular */
 @font-face {
   font-family: "Audiowide";
@@ -98,7 +100,9 @@ h4 {
   margin: 0 auto;
   justify-content: center;
   font-family: "Noto Sans";
+  /* position: relative; */
   /* align-items: center; */
+ 
 }
 
 /* .main {

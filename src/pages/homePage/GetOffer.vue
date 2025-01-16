@@ -2,13 +2,20 @@
   <section class="get-offer">
     <div class="get-offer_text-container">
       <h2 class="get-offer_title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ</h2>
-      <button type="button" class="get-offer_button gray-button">
+      <button type="button" class="get-offer_button">
         ПОЛУЧИТЬ ПРАЙС-ЛИСТ
       </button>
     </div>
 
     <div class="get-offer_image-container">
-      <img src="../../../static/img/met-images/offer.png" alt="offer_image" />
+      <picture>
+        <source
+          srcset="../../../static/img/met-images/offer_mob.png"
+          alt="offer_image"
+          media="(max-width: 680px)"
+        />
+        <img src="../../../static/img/met-images/offer.png" alt="offer_image" />
+      </picture>
     </div>
   </section>
 </template>
@@ -38,7 +45,7 @@
   /* padding-top: 124px; */
   gap: 85px;
 }
-.gray-button {
+.get-offer_button {
   width: 386px;
   height: 80px;
   color: #181818;
@@ -51,6 +58,46 @@
   padding: 0;
   border: none;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
+  .get-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    width: 375px;
+    height: 100%;
+    padding: 33px 16px;
+  }
+  .get-offer_text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 124px; */
+    gap: 28px;
+  }
+  .get-offer_title {
+    font-family: Jost;
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 75.6px */
+    text-transform: uppercase;
+  }
+  .get-offer_button {
+    width: 100%;
+    height: 60px;
+    color: #181818;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 16px;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

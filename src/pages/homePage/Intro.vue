@@ -80,6 +80,7 @@
   padding: 70px 120px 110px 120px;
   flex-direction: row;
   gap: 32px;
+  align-items: center;
 }
 .intro_text-cloud {
   display: flex;
@@ -129,7 +130,7 @@
   bottom: 0;
   left: 0;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .intro {
     padding: 19px 16px 70px;
     flex-direction: column;

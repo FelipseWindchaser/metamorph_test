@@ -35,6 +35,18 @@
   line-height: 130%; /* 23.4px */
   margin: 0;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
+  .blue-caption {
+    margin: 20px auto 70px;
+    width: 343px;
+    height: 100%;
+    background-image: url(../../../static/img/met-images/blue-caption_mob.png);
+    background-repeat: no-repeat;
+    padding: 67px 18px 40px 22px;
+    gap: 10px;
+  }
+  .blue-caption_text {
+    font-size: 15px;
+  }
 }
 </style>

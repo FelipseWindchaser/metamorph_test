@@ -98,7 +98,7 @@
 .stocks-image {
   border-radius: 25px;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .about-us {
     width: 342px;
     padding: 26px 19px 27px 25px;

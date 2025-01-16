@@ -141,7 +141,7 @@
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 375px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .benefits {
     display: flex;
     width: 375px;
