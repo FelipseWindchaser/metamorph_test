@@ -195,7 +195,7 @@ defineProps<{
     gap: 30px;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 69px;
     z-index: 1;
     background: #fff;
   }
@@ -208,14 +208,7 @@ defineProps<{
   .header_menu-button_mob {
     display: flex;
   }
-  /* .header_menu-link {
-    color: var(--main, #181818);
-    font-family: "Noto Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; 
-  } */
+
   .header_container {
     padding: 17px 23px 17px 16px;
     display: flex;
