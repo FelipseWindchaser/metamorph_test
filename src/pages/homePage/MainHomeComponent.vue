@@ -15,7 +15,7 @@
   <Marketplaces :openPopup="openPopup" />
   <BlueCaption />
   <Reviews />
-  <Faq :homepage="true" />
+  <Faq />
   <Footer :homepage="true" />
 </template>
 
@@ -24,6 +24,7 @@
 <script lang="ts" setup>
 const isPopupOpen = ref(false);
 const popupTitle = ref("Получить консультацию");
+const isAnswerOpen = ref(false);
 
 const openPopup = (title?: string) => {
   isPopupOpen.value = true;
@@ -40,6 +41,16 @@ const closePopup = () => {
   const body = document.querySelector("body");
   if (body) {
     body.classList.remove("scroll-off");
+  }
+};
+const openAnswer = (id: string) => {
+  isAnswerOpen.value = true;
+  // const cardId = id;
+  console.log(id);
+  const faqCard = document.querySelector(".faq_card");
+  // console.log(faqCard);
+  if (faqCard) {
+    faqCard.classList.remove("hidden-answer");
   }
 };
 </script>

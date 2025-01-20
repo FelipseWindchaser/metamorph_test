@@ -3,7 +3,7 @@
     <h3 class="reviews_title">отзывы и кейсы</h3>
     <div class="reviews_slider-wrapper">
       <div
-        class="reviews_slider-arrows-wrapper reviews_slider-arrows-wrapper_mob"
+        class="reviews_slider-left-arrow-wrapper reviews_slider-arrows-wrapper_mob"
       >
         <svg
           class="reviews_slider_left-arrow"
@@ -37,6 +37,97 @@
         </svg>
       </div>
       <div class="reviews_slider">
+        <!-- <swiper
+          data-gallery
+          :modules="[Navigation, Pagination]"
+          :observer="true"
+          :observeParents="true"
+          direction="horizontal"
+          slidesPerView="auto"
+          :spaceBetween="30"
+          :speed="500"
+          :breakpoints="{
+            1024: {
+              spaceBetween: 10,
+            },
+            1250: {
+              spaceBetween: 30,
+            },
+          }"
+          :on="{}"
+          ><swiper-slide>
+            <div class="reviews_slide">
+              <div class="reviews_slide-header">
+                <img
+                  class="reviews_slide-photo"
+                  src="../../../static/img/met-images/Artem.png"
+                  alt="user-icon"
+                />
+                <p class="reviews_slide-title">Артем Федоров</p>
+              </div>
+              <p class="reviews_slide-description">
+                Компания сумела качественно оказать не только услугу по
+                продвижению, но и взяла на себя ряд сопутствующих услуг, такие
+                как оформление и оптимизация карточек, а также настройка и
+                запуск рекламы на маркетплейсах.
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="reviews_slide">
+              <div class="reviews_slide-header">
+                <img
+                  class="reviews_slide-photo"
+                  src="../../../static/img/met-images/Ekaterina.png"
+                  alt="user-icon"
+                />
+                <p class="reviews_slide-title">Екатерина Кривцун</p>
+              </div>
+              <p class="reviews_slide-description">
+                Компания сумела качественно оказать не только услугу по
+                продвижению, но и взяла на себя ряд сопутствующих услуг, такие
+                как оформление и оптимизация карточек, а также настройка и
+                запуск рекламы на маркетплейсах.
+              </p>
+            </div> </swiper-slide
+          ><swiper-slide>
+            <div class="reviews_slide">
+              <div class="reviews_slide-header">
+                <img
+                  class="reviews_slide-photo"
+                  src="../../../static/img/met-images/Olga.png"
+                  alt="user-icon"
+                />
+                <p class="reviews_slide-title">Ольга Заворотная</p>
+              </div>
+              <p class="reviews_slide-description">
+                Компания сумела качественно оказать не только услугу по
+                продвижению, но и взяла на себя ряд сопутствующих услуг, такие
+                как оформление и оптимизация карточек, а также настройка и
+                запуск рекламы на маркетплейсах.
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="reviews_slide">
+              <div class="reviews_slide-header">
+                <img
+                  class="reviews_slide-photo"
+                  src="../../../static/img/met-images/Olga.png"
+                  alt="user-icon"
+                />
+                <p class="reviews_slide-title">Владимир Высоцкий</p>
+              </div>
+              <p class="reviews_slide-description">
+                Компания сумела качественно оказать не только услугу по
+                продвижению, но и взяла на себя ряд сопутствующих услуг, такие
+                как оформление и оптимизация карточек, а также настройка и
+                запуск рекламы на маркетплейсах.
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper> -->
+
         <div class="reviews_slide">
           <div class="reviews_slide-header">
             <img
@@ -85,9 +176,41 @@
             маркетплейсах.
           </p>
         </div>
+        <div class="reviews_slide">
+          <div class="reviews_slide-header">
+            <img
+              class="reviews_slide-photo"
+              src="../../../static/img/met-images/Olga.png"
+              alt="user-icon"
+            />
+            <p class="reviews_slide-title">Ольга Заворотная</p>
+          </div>
+          <p class="reviews_slide-description">
+            Компания сумела качественно оказать не только услугу по продвижению,
+            но и взяла на себя ряд сопутствующих услуг, такие как оформление и
+            оптимизация карточек, а также настройка и запуск рекламы на
+            маркетплейсах.
+          </p>
+        </div>
+        <div class="reviews_slide">
+          <div class="reviews_slide-header">
+            <img
+              class="reviews_slide-photo"
+              src="../../../static/img/met-images/Olga.png"
+              alt="user-icon"
+            />
+            <p class="reviews_slide-title">Владимир Высоцкий</p>
+          </div>
+          <p class="reviews_slide-description">
+            Компания сумела качественно оказать не только услугу по продвижению,
+            но и взяла на себя ряд сопутствующих услуг, такие как оформление и
+            оптимизация карточек, а также настройка и запуск рекламы на
+            маркетплейсах.
+          </p>
+        </div>
       </div>
       <div
-        class="reviews_slider-arrows-wrapper reviews_slider-arrows-wrapper_mob"
+        class="reviews_slider-right-arrow-wrapper reviews_slider-arrows-wrapper_mob"
       >
         <svg
           class="reviews_slider_right-arrow active-arrow"
@@ -126,11 +249,24 @@
     </button>
   </section>
 </template>
+<script setup lang="ts">
+import Sliders from "../../../static/js/components/sliders.js";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Navigation } from "swiper/modules";
+// defineProps<{}>();
+onMounted(async () => {
+  if (import.meta.client) {
+    Sliders();
+  }
+});
+</script>
 <style scoped>
 .reviews {
   display: flex;
   flex-direction: column;
   width: 1440px;
+  /* width: 100%; */
+  position: relative;
 }
 .reviews_button {
   width: 336px;
@@ -159,12 +295,15 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  /* width: 100%; */
 }
 .reviews_slider {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   gap: 20px;
+  width: 1200px;
+  /* width: 100%; */
 }
 .reviews_slide {
   display: flex;
@@ -199,7 +338,7 @@
   line-height: 130%; /* 23.4px */
   margin: 0;
 }
-.reviews_slider-arrows-wrapper {
+/* .reviews_slider-arrows-wrapper {
   border: 1px solid #cbcbcb;
   width: 36px;
   height: 36px;
@@ -207,8 +346,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+} */
+.reviews_slider-left-arrow-wrapper {
+  border: 1px solid #cbcbcb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 70px;
 }
-.reviews_slider-arrows-wrapper:hover {
+.reviews_slider-right-arrow-wrapper {
+  border: 1px solid #cbcbcb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 70px;
+}
+.reviews_slider-left-arrow-wrapper:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.reviews_slider-right-arrow-wrapper:hover {
   cursor: pointer;
   opacity: 0.7;
 }

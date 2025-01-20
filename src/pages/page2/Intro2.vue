@@ -6,14 +6,18 @@
         Разработка стратегии продвижения, SEO-оптимизация, запуск рекламных
         кампаний для повышения видимости и конверсии
       </p>
-      <button class="intro__button">
+      <button @click="() => openPopup('Оставить заявку')" class="intro__button">
         ОСТАВИТЬ ЗАЯВКУ
         <img src="../../../static/img/page2-images/Arrow-right.svg" />
       </button>
     </div>
   </section>
 </template>
-
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 <style scoped>
 .intro {
   background: url(../../../static/img/page2-images/Page2-intro.jpg) lightgray

@@ -14,7 +14,7 @@
   <Pricing :openPopup="openPopup" />
   <IntroductionStages :openPopup="openPopup" />
   <AboutUsMs />
-  <Faq :homepage="false" />
+  <FaqMs />
   <Footer :homepage="false" />
 </template>
 <script lang="ts" setup>

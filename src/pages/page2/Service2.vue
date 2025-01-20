@@ -8,15 +8,29 @@
         src="../../../static/img/page2-images/service/bottom-arrow.svg"
       />
     </div>
-    <button class="service__button">запросить услугу</button>
+    <button
+      @click="() => openPopup('Запросить услугу')"
+      class="service__button"
+    >
+      запросить услугу
+    </button>
     <div class="getoffer">
       <h4 class="getoffer__title">получить предложение</h4>
-      <button class="getoffer__button">получить прайс-лист</button>
+      <button
+        @click="() => openPopup('Получить прайс-лист')"
+        class="getoffer__button"
+      >
+        получить прайс-лист
+      </button>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  openPopup: (title?: string) => void;
+}>();
+</script>
 
 <style scoped>
 .service {
