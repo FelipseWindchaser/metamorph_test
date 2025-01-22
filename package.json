@@ -10,15 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36",
-    "@nuxtjs/strapi": "^1.12.0",
-    "aos": "^2.3.4",
-    "choices.js": "^10.2.0",
-    "dynamic-textarea": "^0.0.2",
     "modern-normalize": "^3.0.1",
-    "nouislider": "^15.8.1",
     "nuxt": "^3.12.3",
-    "simplebar": "^6.2.7",
     "swiper": "^11.1.4",
     "vue": "latest"
   },
