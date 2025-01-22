@@ -140,6 +140,16 @@
   top: 45%;
   right: 20px;
 }
+.client-results__slider-left-arrow:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+.client-results__slider-right-arrow:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.2s;
+}
 .active-arrow {
   background-color: #00caf5;
 }
@@ -278,6 +288,7 @@
     /* bottom: 27px; */
     right: 89px;
   }
+
   .active-arrow {
     background-color: #00caf5;
   }
