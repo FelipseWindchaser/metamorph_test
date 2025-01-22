@@ -52,9 +52,12 @@ defineProps<{
 <style scoped>
 /* 1200px */
 .intro {
-  background-image: url(../../../static/img/met-images/intro_p2.png);
-  background-repeat: no-repeat;
-  max-width: 1440px;
+  /* background-image: url(../../../static/img/met-images/intro_p2.png);
+  background-repeat: no-repeat; */
+  background: url(../../../static/img/met-images/intro_p2.png) lightgray 50% /
+    cover no-repeat;
+  /* max-width: 1440px; */
+  width: 100%;
   /* height: 643px; */
   padding: 61px 120px 89px 120px;
 }

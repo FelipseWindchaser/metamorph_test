@@ -84,7 +84,7 @@
   padding: 70px 120px 110px 120px;
   flex-direction: row;
   gap: 32px;
-  align-items: center;
+  /* align-items: center; */
 }
 .intro_text-cloud {
   display: flex;

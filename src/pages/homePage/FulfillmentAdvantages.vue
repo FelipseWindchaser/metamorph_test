@@ -93,6 +93,7 @@
   font-size: 18px;
   border-radius: 16px;
   position: relative;
+  overflow: hidden;
   z-index: 10;
 }
 .fulfillment-advantages_card-title {
@@ -124,6 +125,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
+  pointer-events: none;
   z-index: -1;
 }
 @media (min-width: 320px) and (max-width: 680px) {

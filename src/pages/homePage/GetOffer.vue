@@ -34,7 +34,8 @@ defineProps<{
   flex-direction: row;
   align-items: center;
   gap: 75px;
-  width: 1440px;
+  /* width: 1440px; */
+  width: 100%;
   height: 556px;
   background: linear-gradient(112deg, #2381e3 29.32%, #1862ae 75.85%);
 }

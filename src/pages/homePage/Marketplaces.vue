@@ -109,10 +109,13 @@ defineProps<{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  /* width: 1440px; */
+  width: 100%;
   height: 811px;
-  background-image: url(../../../static/img/met-images/purple-background.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../../../static/img/met-images/purple-background.png); */
+  /* background-repeat: no-repeat; */
+  background: url(../../../static/img/met-images/purple-background.png)
+    lightgray 50% / cover no-repeat;
 }
 .marketplaces-and-fulfillment_text-container {
   width: 990px;

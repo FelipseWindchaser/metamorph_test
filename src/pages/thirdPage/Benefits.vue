@@ -90,7 +90,9 @@ defineProps<{
 .benefits {
   display: flex;
   width: 1440px;
-  padding: 0 120px 110px 120px;
+  width: 100%;
+  align-items: center;
+  padding: 0 269px 110px 120px;
 }
 .benefits_lists {
   display: flex;
@@ -106,6 +108,7 @@ defineProps<{
   line-height: 140%; /* 47.6px */
   text-transform: uppercase;
   padding-bottom: 35px;
+  padding-right: 414px;
 }
 .benefits_list {
   display: flex;
@@ -167,7 +170,7 @@ defineProps<{
   }
   .benefits_title {
     font-size: 20px;
-    padding-bottom: 24px;
+    padding: 0 0 24px 0;
   }
   .benefits_icon {
     width: 40px;
