@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <footer :class="['footer', secondPage && 'footer_pink']">
     <div class="footer-wrapper">
       <div class="footer_text-container">
         <div class="footer_text-content_wrapper">
@@ -85,14 +85,16 @@
         </picture>
       </div>
     </div>
-  </section>
+  </footer>
 </template>
 <style scoped>
 /* 1200px */
 .footer {
   display: flex;
-  width: 1440px;
   background: linear-gradient(112deg, #2381e3 29.32%, #1862ae 75.85%);
+}
+.footer_pink {
+  background: linear-gradient(to right, #2381e3, #7b73e9, #f87ec9);
 }
 
 .footer-wrapper {
@@ -237,5 +239,6 @@
 <script setup lang="ts">
 defineProps<{
   homepage: boolean;
+  secondPage: boolean;
 }>();
 </script>

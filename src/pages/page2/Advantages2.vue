@@ -150,4 +150,70 @@
 .advantages__quote-image {
   width: 60%;
 }
+@media (min-width: 320px) and (max-width: 680px) {
+  .advantages {
+    padding: 70px 16px;
+  }
+
+  .advantages__title {
+    font-size: 24px;
+  }
+
+  .advantages__card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 24px;
+  }
+
+  .advantages__card {
+    min-width: 343px;
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient(
+      to right,
+      #529cd0,
+      #6b59cb,
+      #b736c8,
+      #c93dc5,
+      #d187c1
+    );
+    display: inline-flex;
+    flex-direction: column;
+    padding: 17px 16px 25px;
+  }
+
+  .advantages__icon {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .advantages__textbox {
+    padding: 12px 0 0;
+  }
+
+  .advantages__card-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+
+  .advantages__card-text {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    width: 90%;
+  }
+
+  .advantages__quote {
+    padding: 24px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .advantages__quote-image {
+    width: 100%;
+  }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="header">
+  <header class="header">
     <div class="header_container_pc">
       <div class="header_logo">
         <picture>
@@ -127,7 +127,7 @@
         </button>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 <script setup lang="ts">
 const isNavOpen = ref(false);

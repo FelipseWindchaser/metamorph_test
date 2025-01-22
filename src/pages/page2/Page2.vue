@@ -1,6 +1,6 @@
 <template>
   <FormPopup
-    :homepage="true"
+    :homepage="false"
     :isOpen="isPopupOpen"
     :closePopup="closePopup"
     :popupTitle="popupTitle"
@@ -10,6 +10,12 @@
   <Service2 :openPopup="openPopup" />
   <Advantages2 />
   <Maintenance2 />
+  <NextStage2 />
+  <Documentation2 :openPopup="openPopup" />
+  <Results2 />
+  <ClientResults2 />
+  <Faq2 :secondPage="true" />
+  <Footer :homepage="false" :secondPage="true" />
 </template>
 <script lang="ts" setup>
 const isPopupOpen = ref(false);

@@ -2,12 +2,20 @@
   <section class="service">
     <h3 class="service__title">Услуги по сопровождению на маркетплейсах</h3>
     <Cards2 />
-    <div class="service__arrow">
+    <picture class="service__arrow"
+      ><source
+        class="service__arrow-img"
+        media="(max-width: 680px)"
+        srcset="
+          ../../../static/img/page2-images/unoptimized/bottom-arrow_mob.svg
+        "
+        alt="service__arrow-img"
+      />
       <img
         class="service__arrow-img"
         src="../../../static/img/page2-images/service/bottom-arrow.svg"
       />
-    </div>
+    </picture>
     <button
       @click="() => openPopup('Запросить услугу')"
       class="service__button"
@@ -124,5 +132,75 @@ defineProps<{
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 680px) {
+  .service__title {
+    width: 100%;
+    font-size: 24px;
+  }
+  .service {
+    padding: 60px 0 0;
+  }
+  .service__arrow {
+    width: 100%;
+    margin-top: -25px;
+  }
+  .service__button {
+    width: 342px;
+    height: 60px;
+    margin: 22px auto 70px;
+    border-radius: 16px;
+    background: #00caf5;
+    border-color: transparent;
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .getoffer {
+    background: url(../../../static/img/page2-images/unoptimized/get-offer_mob.jpg)
+      no-repeat;
+    background-size: cover;
+    height: 563px;
+    padding: 0 16px;
+  }
+  .getoffer__title {
+    color: #fff;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 135%; /* 89.6px */
+    text-transform: uppercase;
+    padding: 50px 0 26px;
+    width: 100%;
+  }
+  .getoffer__button {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 16px;
+    background: #00caf5; */
+    /* margin-left: 120px;
+    margin-bottom: 140px; */
+    /* cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase; */
+
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>

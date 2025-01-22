@@ -125,4 +125,70 @@
   font-weight: 400;
   margin: 0;
 }
+@media (min-width: 320px) and (max-width: 680px) {
+  .maintenance {
+    background-color: #e5f5ff;
+    color: #181818;
+    font-style: normal;
+    font-family: "Noto Sans";
+    padding: 36px 16px 40px;
+  }
+
+  .maintenance__title {
+    text-align: center;
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%; /* 53.2px */
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .maintenance__content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .maintenance__img {
+    height: auto;
+    width: 100%;
+  }
+
+  .maintenance__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 18px;
+  }
+
+  .maintenance__card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .maintenance__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .maintenance__textblock {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    line-height: 130%;
+  }
+
+  .maintenance__card-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 0;
+  }
+
+  .maintenance__card-text {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
 </style>

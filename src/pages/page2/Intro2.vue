@@ -77,4 +77,35 @@ defineProps<{
   opacity: 0.85;
   transition: 0.2s;
 }
+@media (min-width: 320px) and (max-width: 680px) {
+  .intro {
+    background: url(../../../static/img/page2-images/unoptimized/page2_intro_mob.jpg)
+      lightgray 50% / cover no-repeat;
+    max-height: 638px;
+  }
+  .intro__textblock {
+    padding-bottom: 155px;
+  }
+  .intro__title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .intro__text {
+    font-size: 17px;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .intro__button {
+    height: 60px;
+    padding: 18px 52px 17px 83px;
+    margin-top: 40px;
+  }
+
+  .intro__button:hover {
+    opacity: 0.85;
+    transition: 0.2s;
+  }
+}
 </style>

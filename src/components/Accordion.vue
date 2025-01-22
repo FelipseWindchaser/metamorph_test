@@ -1,12 +1,18 @@
 <template>
-  <section class="faq" id="faq">
-    <h3 class="faq_title">{{ sectionTitle }}</h3>
+  <section
+    :class="['accordion', secondPage && 'accordion_blue-card']"
+    id="accordion"
+  >
+    <h3 :class="['accordion_title', secondPage && 'accordion_title-centered']">
+      {{ sectionTitle }}
+    </h3>
     <AccordionElement
       v-for="element in elements"
       :id="element.id"
       :title="element.title"
       :content="element.content"
       :handleClick="handleClick"
+      :secondPage="secondPage"
       :isOpen="computedOpenedElement === element.id"
     >
     </AccordionElement>
@@ -24,6 +30,7 @@ const props = defineProps<{
     content: string;
   }[];
   defaultOpenedElementId?: string;
+  secondPage: boolean;
 }>();
 
 const openedElement = ref(props.defaultOpenedElementId);
@@ -37,14 +44,17 @@ const handleClick = (id: string) => {
 };
 </script>
 <style scoped>
-.faq {
+.accordion {
   margin: 110px auto;
   width: 1200px;
 }
-.faq > :last-child {
+.accordion > :last-child {
   border: none;
 }
-.faq_title {
+.accordion_blue-card > :nth-child(even) {
+  background: #e5f5ff;
+}
+.accordion_title {
   color: var(--main, #181818);
   font-family: Jost;
   font-size: 38px;
@@ -52,18 +62,22 @@ const handleClick = (id: string) => {
   font-weight: 700;
   line-height: 140%; /* 53.2px */
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 40px;
 }
+.accordion_title-centered {
+  text-align: center;
+}
+
 @media (min-width: 320px) and (max-width: 680px) {
-  .faq {
+  .accordion {
     margin: 60px auto;
     width: 375px;
     padding: 0 16px;
   }
 
-  .faq_title {
+  .accordion_title {
     font-size: 20px;
-    padding-bottom: 6px;
+    padding-bottom: 24px;
   }
 }
 </style>

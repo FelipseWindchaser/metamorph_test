@@ -187,12 +187,15 @@
 }
 @media (min-width: 320px) and (max-width: 680px) {
   .popup {
-    display: display;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     padding: 0 16px;
+  }
+  .active {
+    display: flex;
   }
   .popup_overlay {
     background-color: #000c;
