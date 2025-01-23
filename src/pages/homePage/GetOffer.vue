@@ -16,7 +16,7 @@
     <div class="get-offer_image-container">
       <picture>
         <source
-          srcset="../../../static/img/met-images/offer_320.png"
+          srcset="../../../static/img/met-images/get-offer_320.png"
           alt="offer_image"
           media="(max-width: 374px)"
         />
