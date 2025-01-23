@@ -77,7 +77,7 @@ defineProps<{
   opacity: 0.85;
   transition: 0.2s;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   .intro {
     background: url(../../../static/img/page2-images/unoptimized/page2_intro_mob.jpg)
       lightgray 50% / cover no-repeat;
@@ -93,6 +93,7 @@ defineProps<{
 
   .intro__text {
     font-size: 17px;
+    max-width: 335px;
     width: 100%;
     padding: 0 25px;
   }

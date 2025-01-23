@@ -13,7 +13,7 @@
   <NextStage2 />
   <Documentation2 :openPopup="openPopup" />
   <Results2 />
-  <ClientResults2 />
+  <!-- <ClientResults2 />  нет контента -->
   <Faq2 :secondPage="true" />
   <Footer :homepage="false" :secondPage="true" />
 </template>
