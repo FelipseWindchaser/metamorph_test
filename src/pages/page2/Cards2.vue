@@ -200,12 +200,15 @@
   font-weight: 400;
   line-height: 130%;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   .card {
+    max-width: 600px;
     padding: 25px 16px;
     color: #181818;
     font-family: "Noto Sans";
     font-style: normal;
+    flex-direction: column;
+    align-self: center;
   }
   .card__title {
     color: #181818;

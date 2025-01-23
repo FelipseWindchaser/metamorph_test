@@ -184,7 +184,8 @@
   margin: 0;
 }
 .next-stage__card-number-wrapper {
-  width: 103px;
+  max-width: 103px;
+  width: 100%;
   height: 50px;
   flex-shrink: 0;
   border-radius: 60px;
@@ -220,9 +221,10 @@
   font-weight: 400;
   line-height: 130%;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   .next-stage {
     padding: 70px 16px;
+    max-width: 800px;
   }
   .next-stage__title {
     font-size: 24px;
@@ -244,7 +246,7 @@
     gap: 12px 10px;
   }
   .next-stage__card {
-    min-width: 167px;
+    min-width: 117px;
     border-radius: 24px;
     background: #e5f5ff;
     padding: 16px 8px;

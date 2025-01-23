@@ -40,7 +40,6 @@ const computedOpenedElement = computed(() => {
 
 const handleClick = (id: string) => {
   openedElement.value = openedElement.value === id ? undefined : id;
-  console.log(id, openedElement.value);
 };
 </script>
 <style scoped>

@@ -9,13 +9,13 @@
   <Intro :openPopup="openPopup" />
   <Fulfillment :openPopup="openPopup" />
   <AboutUs />
-  <!-- AboutUs not responsive-->
   <GetOffer :openPopup="openPopup" />
   <FulfillmentAdvantages />
   <Logistics :openPopup="openPopup" />
-  <Marketplaces :openPopup="openPopup" />
+  <Marketplaces />
   <BlueCaption />
-  <Reviews />
+  <!-- <Reviews /> -->
+  <!-- раскомментировать когда появится контент -->
   <Faq />
   <Footer :homepage="true" />
 </template>

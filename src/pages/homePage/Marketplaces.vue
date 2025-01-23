@@ -94,20 +94,16 @@
     </div>
     <div></div>
     <a class="ms-link" href="/page-3">
-      <button
-        @click="() => openPopup('Свяжитесь с нами')"
-        class="marketplaces-and-fulfillment_button"
-        type="button"
-      >
+      <button class="marketplaces-and-fulfillment_button" type="button">
         Перейти
       </button>
     </a>
   </section>
 </template>
 <script setup lang="ts">
-defineProps<{
-  openPopup: (title?: string) => void;
-}>();
+// defineProps<{
+//   openPopup: (title?: string) => void;
+// }>();
 </script>
 <style scoped>
 .marketplaces-and-fulfillment {

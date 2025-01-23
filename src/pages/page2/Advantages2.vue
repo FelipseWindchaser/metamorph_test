@@ -101,7 +101,8 @@
 }
 
 .advantages__card {
-  min-width: 343px;
+  /* min-width: 343px; */
+  width: 100%;
   border-radius: 24px;
   background: linear-gradient(
     to right,
@@ -167,7 +168,7 @@
   }
 
   .advantages__card {
-    min-width: 343px;
+    /* min-width: 343px; */
     width: 100%;
     border-radius: 24px;
     background: linear-gradient(

@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews hidden" id="reviews">
+  <section class="reviews" id="reviews">
     <h3 class="reviews_title">отзывы и кейсы</h3>
     <div class="reviews_slider-wrapper">
       <div
@@ -278,9 +278,6 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 </script>
 <style scoped>
-.hidden {
-  display: none;
-}
 .swiper {
   width: 82%;
 }
@@ -290,7 +287,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 .reviews {
   display: flex;
   flex-direction: column;
-  /* width: 1440px; */
+  max-width: 1440px;
   width: 100%;
   position: relative;
 }
