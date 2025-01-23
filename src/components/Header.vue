@@ -148,7 +148,7 @@ defineProps<{
   font-family: "Noto Sans";
   display: flex;
   justify-content: space-between;
-  padding: 30px 120px;
+  padding: 30px 8.33vw;
   box-shadow: 0 6px 16px #00000014;
   position: relative;
 }
@@ -187,7 +187,7 @@ defineProps<{
 .header_menu-link:hover {
   opacity: 0.7;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   .header_menu_mob {
     display: none;
     flex-direction: column;

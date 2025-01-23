@@ -71,12 +71,13 @@
           </button>
         </form>
       </div>
-      <div class="footer_image-container">
-        <picture>
+      <div>
+        <picture class="footer_image-container">
           <source
             srcset="../../static/img/met-images/map_mob.jpg"
             media="(max-width: 680px)"
           />
+
           <img
             class="footer_image"
             src="../../static/img/met-images/map.jpg"
@@ -87,6 +88,12 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+defineProps<{
+  homepage: boolean;
+  secondPage?: boolean;
+}>();
+</script>
 <style scoped>
 /* 1200px */
 .footer {
@@ -100,7 +107,8 @@
 .footer-wrapper {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   align-self: center;
   padding: 66px 0 77px;
   gap: 63px;
@@ -122,6 +130,7 @@
   font-weight: 700;
   line-height: 130%; /* 41.6px */
   margin-bottom: 33px;
+  max-width: 371px;
 }
 .footer_contacts {
   display: flex;
@@ -143,6 +152,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 63px;
 }
 
 .footer_form-button {
@@ -189,9 +199,14 @@
 .footer_form-checkbox:hover {
   cursor: pointer;
 }
+.footer_image-container {
+  width: 100%;
+}
 .footer_image {
   border-radius: 16px;
   height: 100%;
+  max-width: 710px;
+  width: 100%;
 }
 .footer_form-checkbox_wrapper {
   display: flex;
@@ -207,13 +222,16 @@
   line-height: 130%; /* 16.9px */
   margin: 0;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 681px) and (max-width: 1280px) {
   .footer {
     display: flex;
-    width: 375px;
+
+    width: 100%;
     background: linear-gradient(152deg, #3792ff 5.77%, #0041c8 90.55%);
   }
   .footer-wrapper {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .footer-wrapper {
@@ -225,6 +243,7 @@
     gap: 63px;
   }
   .footer_form {
+    max-width: 375px;
     width: 100%;
     margin-top: 40px;
   }
@@ -234,11 +253,97 @@
   .footer_contacts_text {
     font-size: 17px;
   }
+  .footer_contacts-container {
+    align-items: center;
+  }
+  .footer_text-container {
+    align-items: center;
+  }
+  .footer_image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_image {
+    width: 80%;
+  }
+}
+@media (min-width: 375px) and (max-width: 680px) {
+  .footer {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(152deg, #3792ff 5.77%, #0041c8 90.55%);
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 35px 16px 44px;
+    gap: 63px;
+  }
+  .footer_text-container {
+    align-items: center;
+  }
+  .footer_text-content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_form {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 40px;
+  }
+  .footer_title {
+    font-size: 24px;
+  }
+  .footer_contacts_text {
+    font-size: 17px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .footer {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(152deg, #3792ff 5.77%, #0041c8 90.55%);
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 35px 16px 44px;
+    gap: 63px;
+  }
+  .footer_text-container {
+    align-items: center;
+  }
+  .footer_text-content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_form {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 40px;
+  }
+  .footer_title {
+    font-size: 24px;
+  }
+  .footer_contacts_text {
+    font-size: 17px;
+  }
+  .footer_image {
+    max-width: 343px;
+    width: 100%;
+  }
 }
 </style>
-<script setup lang="ts">
-defineProps<{
-  homepage: boolean;
-  secondPage: boolean;
-}>();
-</script>

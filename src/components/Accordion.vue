@@ -30,7 +30,7 @@ const props = defineProps<{
     content: string;
   }[];
   defaultOpenedElementId?: string;
-  secondPage: boolean;
+  secondPage?: boolean;
 }>();
 
 const openedElement = ref(props.defaultOpenedElementId);
@@ -46,7 +46,8 @@ const handleClick = (id: string) => {
 <style scoped>
 .accordion {
   margin: 110px auto;
-  width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
 }
 .accordion > :last-child {
   border: none;
@@ -63,6 +64,7 @@ const handleClick = (id: string) => {
   line-height: 140%; /* 53.2px */
   text-transform: uppercase;
   padding-bottom: 40px;
+  padding-left: 120px;
 }
 .accordion_title-centered {
   text-align: center;
@@ -71,13 +73,14 @@ const handleClick = (id: string) => {
 @media (min-width: 320px) and (max-width: 680px) {
   .accordion {
     margin: 60px auto;
-    width: 375px;
-    padding: 0 16px;
+    /* width: 375px; */
+    padding: 0;
   }
 
   .accordion_title {
     font-size: 20px;
     padding-bottom: 24px;
+    padding-left: 16px;
   }
 }
 </style>

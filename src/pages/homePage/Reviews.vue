@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews" id="reviews">
+  <section class="reviews hidden" id="reviews">
     <h3 class="reviews_title">отзывы и кейсы</h3>
     <div class="reviews_slider-wrapper">
       <div
@@ -278,6 +278,9 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 </script>
 <style scoped>
+.hidden {
+  display: none;
+}
 .swiper {
   width: 82%;
 }
@@ -287,8 +290,8 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 .reviews {
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  /* width: 100%; */
+  /* width: 1440px; */
+  width: 100%;
   position: relative;
 }
 .reviews_button {
@@ -308,9 +311,9 @@ import { Swiper, SwiperSlide } from "swiper/vue";
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  width: 1200px;
-  align-self: center;
+  max-width: 1200px;
   padding-bottom: 40px;
+  padding-left: 120px;
 }
 .reviews_slider-wrapper {
   display: flex;
@@ -412,6 +415,14 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 .active-arrow {
   stroke: #181818;
 }
+@media (min-width: 681px) and (max-width: 1220px) {
+  .reviews_slider-right-arrow-wrapper {
+    display: none;
+  }
+  .reviews_slider-left-arrow-wrapper {
+    display: none;
+  }
+}
 @media (min-width: 320px) and (max-width: 680px) {
   .reviews_slider-arrows-wrapper_mob {
     display: none;
@@ -419,16 +430,20 @@ import { Swiper, SwiperSlide } from "swiper/vue";
   .reviews {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    /* max-width: 375px; */
+    width: 100%;
     padding-left: 16px;
+    padding-right: 16px;
   }
   .reviews_title {
     font-size: 24px;
     width: 100%;
     padding-bottom: 24px;
+    padding-left: 16px;
   }
   .reviews_button {
-    width: 336px;
+    max-width: 336px;
+    width: 100%;
     height: 60px;
     margin: 14px 0 0 0;
     display: flex;
@@ -453,6 +468,9 @@ import { Swiper, SwiperSlide } from "swiper/vue";
   }
   .reviews_slide-description {
     font-size: 15px;
+  }
+  .swiper {
+    width: 100%;
   }
 }
 </style>

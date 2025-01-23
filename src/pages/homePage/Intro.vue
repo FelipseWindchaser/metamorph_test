@@ -1,8 +1,11 @@
 <template>
   <section class="intro">
     <div class="intro_text-container">
-      <h1 class="intro_title">ПОМОЖЕМ ВАМ <br />НА МАРКЕТПЛЕЙСАХ</h1>
-      <p class="intro_subtitle">Фулфилмент в Ереване</p>
+      <div>
+        <h1 class="intro_title">ПОМОЖЕМ ВАМ <br />НА МАРКЕТПЛЕЙСАХ</h1>
+        <p class="intro_subtitle">Фулфилмент в Ереване</p>
+      </div>
+
       <div class="intro_text-background">
         <div class="intro_text-cloud">
           <p class="intro_card-title intro_text">
@@ -35,7 +38,7 @@
         <picture>
           <source
             class="intro_image"
-            media="(max-width: 680px)"
+            media="(max-width: 1280px)"
             srcset="../../../static/img/met-images/intro_mob.png"
             alt="intro_image"
           />
@@ -64,12 +67,23 @@
   </section>
 </template>
 <style scoped>
+.intro {
+  padding: 70px 120px 110px;
+  flex-direction: row;
+  gap: 32px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.intro_text-container {
+  width: 100%;
+}
 .intro_title {
   font-family: Jost;
   font-size: 50px;
   font-weight: bold;
   line-height: 140%;
-  width: 570px;
 }
 .intro_subtitle {
   font-family: Jost;
@@ -78,14 +92,10 @@
   font-weight: bold;
   line-height: 140%;
   padding: 6px 0 14px;
+
   width: 570px;
 }
-.intro {
-  padding: 70px 120px 110px 120px;
-  flex-direction: row;
-  gap: 32px;
-  /* align-items: center; */
-}
+
 .intro_text-cloud {
   display: flex;
   flex-direction: column;
@@ -93,11 +103,12 @@
   padding: 62px 0 23px 32px;
 }
 .intro_text-background {
-  background-image: url(../../../static/img/met-images/text-cloud.png);
-  background-repeat: no-repeat;
+  background: url(../../../static/img/met-images/text-cloud.png) white 50% /
+    cover no-repeat;
   height: 283px;
   width: 558px;
 }
+
 .intro_text-cards {
   display: flex;
   flex-direction: row;
@@ -120,7 +131,7 @@
   font-weight: bold;
 }
 .intro_image-container {
-  /* height: 100%; */
+  max-height: 509px;
   position: relative;
 }
 .intro_image {
@@ -138,11 +149,61 @@
   cursor: pointer;
   opacity: 0.7;
 }
+@media (min-width: 681px) and (max-width: 1280px) {
+  .intro {
+    padding: 70px 120px 110px;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro_button {
+    font-size: 18px;
+    font-weight: bold;
+    position: static;
+    margin-top: 16px;
+    padding: 17px 30px 18px 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro_text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .intro_title {
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 140%;
+  }
+  .intro_text-background {
+    background: url(../../../static/img/met-images/text-cloud.png) white 50% /
+      cover no-repeat;
+    height: 283px;
+    width: 558px;
+  }
+}
 @media (min-width: 320px) and (max-width: 680px) {
   .intro {
     padding: 19px 16px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 18px;
+  }
+  .intro_text-container {
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .intro_title {
     font-family: Jost;
@@ -164,17 +225,50 @@
     width: 100%;
   }
 
-  .intro_text-background {
-    background-image: url(../../../static/img/met-images/text_cloud_mob.png);
-    background-repeat: no-repeat;
-    width: 343px;
+  /* .intro_text-background {
+    background: url(../../../static/img/met-images/text_cloud_mob.png) white 50% /
+      contain no-repeat;
+    width: 100%;
     height: 427px;
+    height: 100%;
+  } */
+  .intro_text-background {
+    margin: 50px 0 20px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    max-width: 343px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(to right, #2381e2, #1a69ba);
+    border-radius: 20px;
+    gap: 15px;
+  }
+  .intro_text-background::before {
+    width: 0;
+    height: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 46px;
+    border-bottom-width: 0px;
+    border-right: 23px solid #2382e3;
+    position: absolute;
+    top: -37px;
+    left: 15px;
+    rotate: 19deg;
+    z-index: -1;
+  }
+  .intro_image {
+    width: 100%;
   }
   .intro_text-cloud {
     display: flex;
     flex-direction: column;
     gap: 21px;
-    padding: 62px 53px 23px 32px;
+    padding: 23px 53px 25px 32px;
   }
   .intro_card-title {
     width: 100%;

@@ -8,95 +8,100 @@
         Надежный фулфилмент — это только начало
       </p>
     </div>
-    <div class="marketplaces-and-fulfillment_cards">
-      <div class="marketplaces-and-fulfillment_card">
-        <p class="marketplaces-and-fulfillment_card-number">1</p>
-        <div class="marketplaces-and-fulfillment_card-content">
-          <img
-            class="marketplaces-and-fulfillment_card-icon"
-            src="../../../static/img/met-images/hand-package-delivery.png"
-            alt="hand-and-package-icon"
-          />
+    <div>
+      <div class="marketplaces-and-fulfillment_cards">
+        <div class="marketplaces-and-fulfillment_card">
+          <p class="marketplaces-and-fulfillment_card-number">1</p>
+          <div class="marketplaces-and-fulfillment_card-content">
+            <img
+              class="marketplaces-and-fulfillment_card-icon"
+              src="../../../static/img/met-images/hand-package-delivery.png"
+              alt="hand-and-package-icon"
+            />
+            <p
+              class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            >
+              Приемка и хранение товаров
+            </p>
+          </div>
           <p
-            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
           >
             Приемка и хранение товаров
           </p>
         </div>
-        <p
-          class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
-        >
-          Приемка и хранение товаров
-        </p>
-      </div>
-      <div class="marketplaces-and-fulfillment_card">
-        <p class="marketplaces-and-fulfillment_card-number">2</p>
-        <div class="marketplaces-and-fulfillment_card-content">
-          <img
-            class="marketplaces-and-fulfillment_card-icon"
-            src="../../../static/img/met-images/World, Globe, Basket.png"
-            alt="globe-icon"
-          />
+        <div class="marketplaces-and-fulfillment_card">
+          <p class="marketplaces-and-fulfillment_card-number">2</p>
+          <div class="marketplaces-and-fulfillment_card-content">
+            <img
+              class="marketplaces-and-fulfillment_card-icon"
+              src="../../../static/img/met-images/World, Globe, Basket.png"
+              alt="globe-icon"
+            />
+            <p
+              class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            >
+              Подготовка к продаже
+            </p>
+          </div>
           <p
-            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
           >
             Подготовка к продаже
           </p>
         </div>
-        <p
-          class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
-        >
-          Подготовка к продаже
-        </p>
-      </div>
-      <div class="marketplaces-and-fulfillment_card">
-        <p class="marketplaces-and-fulfillment_card-number">3</p>
-        <div class="marketplaces-and-fulfillment_card-content">
-          <img
-            class="marketplaces-and-fulfillment_card-icon"
-            src="../../../static/img/met-images/browser-cursor-click.png"
-            alt="browser-icon"
-          />
+        <div class="marketplaces-and-fulfillment_card">
+          <p class="marketplaces-and-fulfillment_card-number">3</p>
+          <div class="marketplaces-and-fulfillment_card-content">
+            <img
+              class="marketplaces-and-fulfillment_card-icon"
+              src="../../../static/img/met-images/browser-cursor-click.png"
+              alt="browser-icon"
+            />
+            <p
+              class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            >
+              SEO и рекламные кампании
+            </p>
+          </div>
           <p
-            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
           >
             SEO и рекламные кампании
           </p>
         </div>
-        <p
-          class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
-        >
-          SEO и рекламные кампании
-        </p>
-      </div>
-      <div class="marketplaces-and-fulfillment_card">
-        <p class="marketplaces-and-fulfillment_card-number">4</p>
-        <div class="marketplaces-and-fulfillment_card-content">
-          <img
-            class="marketplaces-and-fulfillment_card-icon"
-            src="../../../static/img/met-images/message-review-star.png"
-            alt="social-icon"
-          />
+        <div class="marketplaces-and-fulfillment_card">
+          <p class="marketplaces-and-fulfillment_card-number">4</p>
+          <div class="marketplaces-and-fulfillment_card-content">
+            <img
+              class="marketplaces-and-fulfillment_card-icon"
+              src="../../../static/img/met-images/message-review-star.png"
+              alt="social-icon"
+            />
+            <p
+              class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            >
+              Рост продаж и положительные отзывы
+            </p>
+          </div>
           <p
-            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_pc"
+            class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
           >
             Рост продаж и положительные отзывы
           </p>
         </div>
-        <p
-          class="marketplaces-and-fulfillment_card-text marketplaces-and-fulfillment_card-text_mob"
-        >
-          Рост продаж и положительные отзывы
-        </p>
       </div>
     </div>
-    <button
-      @click="() => openPopup('Свяжитесь с нами')"
-      class="marketplaces-and-fulfillment_button"
-      type="button"
-    >
-      Перейти
-    </button>
+    <div></div>
+    <a class="ms-link" href="/page-3">
+      <button
+        @click="() => openPopup('Свяжитесь с нами')"
+        class="marketplaces-and-fulfillment_button"
+        type="button"
+      >
+        Перейти
+      </button>
+    </a>
   </section>
 </template>
 <script setup lang="ts">
@@ -206,11 +211,19 @@ defineProps<{
 .marketplaces-and-fulfillment_card-text_mob {
   display: none;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+.ms-link {
+  max-width: 343px;
+  width: 100%;
+  text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 1280px) {
   .marketplaces-and-fulfillment {
-    width: 375px;
+    /* width: 375px; */
+    width: 100%;
     height: 100%;
-    background-image: url(../../../static/img/met-images/purple-background_mob.png);
+    /* background-image: url(../../../static/img/met-images/purple-background_mob.png); */
+    background: url(../../../static/img/met-images/purple-background_mob.png)
+      lightgray 50% / cover no-repeat;
     padding: 27px 16px 33px;
   }
   .marketplaces-and-fulfillment_text-container {

@@ -1,24 +1,27 @@
 <template>
-  <div
-    :class="['accordion_card', secondPage && 'accordion_card_border-none']"
-    :id="id"
-    @click="() => handleClick(id)"
-  >
-    <div class="accordion_card_text-container">
-      <p class="accordion_card-question">
-        <!-- Какая стоимость за использование фулфилмента на маркетплейсах? -->
-        {{ title }}
-      </p>
-      <p :class="['accordion_card-answer', !isOpen && 'hidden-answer']">
-        <!-- Стоимость можете уточнить у наших операторов. -->
-        {{ content }}
-      </p>
+  <div class="accordion_card" :id="id" @click="() => handleClick(id)">
+    <div
+      :class="[
+        'accordion_card-wrapper',
+        secondPage && 'accordion_card_border-none',
+      ]"
+    >
+      <div class="accordion_card_text-container">
+        <p class="accordion_card-question">
+          <!-- Какая стоимость за использование фулфилмента на маркетплейсах? -->
+          {{ title }}
+        </p>
+        <p :class="['accordion_card-answer', !isOpen && 'hidden-answer']">
+          <!-- Стоимость можете уточнить у наших операторов. -->
+          {{ content }}
+        </p>
+      </div>
+      <img
+        :class="['accordion_card-icon', isOpen && 'rotated-icon']"
+        src="../../static/img/met-images/plus_var-2.svg"
+        alt="plus-icon"
+      />
     </div>
-    <img
-      :class="['accordion_card-icon', isOpen && 'rotated-icon']"
-      src="../../static/img/met-images/plus_var-2.svg"
-      alt="plus-icon"
-    />
   </div>
 </template>
 
@@ -29,7 +32,7 @@ defineProps<{
   content: string;
   handleClick: (id: string) => void;
   isOpen: boolean;
-  secondPage: boolean;
+  secondPage?: boolean;
 }>();
 </script>
 <style scoped>
@@ -37,10 +40,17 @@ defineProps<{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0 120px;
+  width: 100%;
+}
+.accordion_card-wrapper {
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
   padding: 18px 0;
 }
-
 .rotated-icon {
   transform: rotate(45deg);
 }
@@ -48,6 +58,7 @@ defineProps<{
 .accordion_card_text-container {
   display: flex;
   flex-direction: column;
+  max-width: 1024px;
   gap: 10px;
 }
 .accordion_card-question {
@@ -80,8 +91,8 @@ defineProps<{
     justify-content: space-between;
     gap: 15px;
     align-items: flex-start;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 18px 0;
+
+    padding: 0 16px;
   }
 
   .rotated-icon {

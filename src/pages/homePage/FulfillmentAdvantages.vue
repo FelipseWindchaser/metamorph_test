@@ -66,12 +66,13 @@
 <style scoped>
 .fulfillment-advantages {
   padding: 110px 0;
-  width: 1440px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   gap: 40px;
 }
 .fulfillment-advantages_title {
-  padding-left: 120px;
+  /* padding-left: 120px; */
   font-family: Jost;
   font-size: 38px;
   font-style: normal;
@@ -83,11 +84,12 @@
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 20px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .fulfillment-advantages_card {
   background-color: #eaf2fa;
-  width: 387px;
+  /* width: 387px; */
+  width: 100%;
   height: 298px;
   padding: 25px;
   font-size: 18px;
@@ -98,7 +100,8 @@
 }
 .fulfillment-advantages_card-title {
   margin: 0;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   padding-bottom: 10px;
   font-size: 20px;
   font-style: normal;
@@ -128,10 +131,48 @@
   pointer-events: none;
   z-index: -1;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 731px) and (max-width: 1280px) {
   .fulfillment-advantages {
     padding: 70px 16px;
-    width: 375px;
+    max-width: 1000px;
+    display: flex;
+    gap: 24px;
+  }
+  .fulfillment-advantages_cards {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+  }
+  .fulfillment-advantages_title {
+    padding-left: 0;
+    font-size: 24px;
+  }
+  .fulfillment-advantages_card {
+    width: 100%;
+    height: 208px;
+    padding: 18px 18px 0 18px;
+    font-size: 15px;
+  }
+  .fulfillment-advantages_card-title {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 17px;
+  }
+  .fulfillment-advantages_card-description {
+    width: 100%;
+    font-size: 15px;
+  }
+  .fulfillment-advantages_card-number {
+    font-size: 100px;
+    bottom: 20px;
+    right: 11px;
+  }
+}
+@media (min-width: 320px) and (max-width: 730px) {
+  .fulfillment-advantages {
+    padding: 70px 16px;
+    max-width: 500px;
+    width: 100%;
     display: flex;
     gap: 24px;
   }

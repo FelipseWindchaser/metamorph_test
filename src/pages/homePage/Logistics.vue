@@ -19,9 +19,9 @@
         <div class="logistics_image-container">
           <picture>
             <source
-              media="(max-width: 680px)"
+              media="(max-width: 1280px)"
               class="logistics_image"
-              srcset="../../../static/img/met-images/packages_mob.png"
+              srcset="../../../static/img/met-images/packages_1024.jpg"
               alt="packages_image"
             />
             <img
@@ -65,9 +65,9 @@
         <div class="logistics_image-container">
           <picture>
             <source
-              media="(max-width: 680px)"
+              media="(max-width: 1280px)"
               class="logistics_image"
-              srcset="../../../static/img/met-images/containers_mob.png"
+              srcset="../../../static/img/met-images/containers_1024.png"
               alt="packages_image"
             />
             <img
@@ -76,11 +76,7 @@
               alt="packages_image"
             />
           </picture>
-          <!-- <img
-            class="logistics_image"
-            src="../../../static/img/met-images/Mask group3.png"
-            alt="containers_image"
-          /> -->
+
           <button
             @click="() => openPopup('Получить предложение')"
             class="logistics_button orange-button"
@@ -108,7 +104,8 @@ defineProps<{
 <style scoped>
 .logistics {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   padding-bottom: 110px;
 }
 .logistics_title {
@@ -158,14 +155,17 @@ defineProps<{
 .logistics_image-container {
   width: 589.5px;
   height: 303px;
+
   flex-shrink: 0;
   position: relative;
 }
 .logistics_image {
   width: 100%;
+  border-radius: 16px;
 }
 .logistics_button {
-  width: 336px;
+  max-width: 336px;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 17px 27px;
@@ -177,14 +177,67 @@ defineProps<{
   cursor: pointer;
   opacity: 0.7;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 681px) and (max-width: 1280px) {
   .logistics {
     display: flex;
-    width: 375px;
+    max-width: 800px;
     padding: 0 16px 70px;
   }
   .logistics_title {
     padding-bottom: 24px;
+    width: 100%;
+  }
+  .logistics_subtitle {
+    font-size: 17px;
+  }
+  .logistics_description {
+    font-size: 15px;
+  }
+  .logistics_text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .logistics_wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .logistics_image-container {
+    /* width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logistics_image {
+    width: 100%;
+  }
+  .logistics_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    padding: 17px 30px 18px 30px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 680px) {
+  .logistics {
+    display: flex;
+    max-width: 680px;
+    width: 100%;
+    padding: 0 16px 70px;
+  }
+  .logistics_title {
+    padding-bottom: 24px;
+    font-size: 24px;
     width: 100%;
   }
   .logistics_subtitle {
