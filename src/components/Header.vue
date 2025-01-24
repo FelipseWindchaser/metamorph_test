@@ -12,14 +12,12 @@
       </div>
       <nav class="header_nav">
         <div class="header_menu">
-          <a href="#" class="header_menu-link">Главная</a>
-          <a
-            class="header_menu-link"
-            :href="` ${homepage ? ' #about-us' : ' #presentation'} `"
-            >О нас</a
+          <a href="https://metamorph.group/" class="header_menu-link"
+            >Главная</a
           >
-          <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a>
-          <a href="#faq" class="header_menu-link">Вопросы и ответы</a>
+          <a class="header_menu-link" :href="pageLink">О нас</a>
+          <!-- <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a> -->
+          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
           <button
             @click="() => openPopup()"
             type="button"
@@ -108,14 +106,10 @@
       </div>
       <div :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`">
         <!-- add active to header_menu_mob -->
-        <a href="#" class="header_menu-link">Главная</a>
-        <a
-          class="header_menu-link"
-          :href="` ${homepage ? ' #about-us' : ' #presentation'} `"
-          >О нас</a
-        >
-        <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a>
-        <a href="#faq" class="header_menu-link">Вопросы и ответы</a>
+        <a href="https://metamorph.group/" class="header_menu-link">Главная</a>
+        <a class="header_menu-link" :href="pageLink">О нас</a>
+        <!-- <a href="#" class="header_menu-link">Отзывы и кейсы</a> -->
+        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
         <button
           @click="() => openPopup()"
           type="button"
@@ -130,6 +124,24 @@
   </header>
 </template>
 <script setup lang="ts">
+const props = defineProps<{
+  page: "home" | "marketplaces" | "moysklad";
+  openPopup: (title?: string) => void;
+}>();
+const homepage = props.page === "home";
+const pageLink = computed(() => {
+  switch (props.page) {
+    case "home":
+      return "#about-us";
+    case "marketplaces":
+      return "#service";
+    case "moysklad":
+      return "#presentation";
+    default:
+      return "https://metamorph.group/";
+  }
+});
+
 const isNavOpen = ref(false);
 const openNav = () => {
   isNavOpen.value = true;
@@ -138,10 +150,6 @@ const openNav = () => {
 const closeNav = () => {
   isNavOpen.value = false;
 };
-defineProps<{
-  homepage: boolean;
-  openPopup: (title?: string) => void;
-}>();
 </script>
 <style scoped>
 .header_container_pc {

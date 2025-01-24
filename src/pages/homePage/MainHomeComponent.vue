@@ -5,7 +5,7 @@
     :closePopup="closePopup"
     :popupTitle="popupTitle"
   />
-  <Header :homepage="true" :openPopup="openPopup" />
+  <Header :page="'home'" :openPopup="openPopup" />
   <Intro :openPopup="openPopup" />
   <Fulfillment :openPopup="openPopup" />
   <AboutUs />

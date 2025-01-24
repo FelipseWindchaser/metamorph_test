@@ -249,6 +249,9 @@ defineProps<{
   font-weight: 700;
   line-height: normal;
 }
+.presentation_container_mob {
+  display: none;
+}
 .presentation_container {
   display: flex;
   flex-direction: column;

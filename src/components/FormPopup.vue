@@ -175,6 +175,10 @@ const submitForm = async () => {
   justify-content: center;
   align-items: center;
   height: 60px;
+  cursor: pointer;
+}
+.popup_form-button:hover {
+  opacity: 0.7;
 }
 .popup_form-input {
   height: 50px;

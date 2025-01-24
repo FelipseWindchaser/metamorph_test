@@ -5,7 +5,7 @@
     :closePopup="closePopup"
     :popupTitle="popupTitle"
   />
-  <Header :homepage="false" :openPopup="openPopup" />
+  <Header :page="'marketplaces'" :openPopup="openPopup" />
   <Intro2 :openPopup="openPopup" />
   <Service2 :openPopup="openPopup" />
   <Advantages2 />

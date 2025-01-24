@@ -5,7 +5,7 @@
     :closePopup="closePopup"
     :popupTitle="popupTitle"
   />
-  <Header :homepage="false" :openPopup="openPopup" />
+  <Header :page="'moysklad'" :openPopup="openPopup" />
   <IntroMs :openPopup="openPopup" />
   <Presentation :openPopup="openPopup" />
   <Benefits :openPopup="openPopup" />

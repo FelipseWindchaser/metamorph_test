@@ -1,5 +1,5 @@
 <template>
-  <section class="service">
+  <section class="service" id="service">
     <h3 class="service__title">Услуги по сопровождению на маркетплейсах</h3>
     <Cards2 />
     <picture class="service__arrow"
