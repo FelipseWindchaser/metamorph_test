@@ -36,23 +36,30 @@
             </div>
           </div>
         </div>
-        <form class="footer_form" name="footer-form">
+        <form
+          class="footer_form"
+          name="footer-form"
+          @submit.prevent="submitForm"
+        >
           <input
             class="footer_form-input"
-            name="name"
             type="text"
             placeholder="Имя"
+            v-model="formData.name"
+            required
           />
           <input
             class="footer_form-input"
-            name="email"
             type="email"
             placeholder="Email"
+            v-model="formData.email"
+            required
           />
           <textarea
             class="footer_form-input textarea"
-            name="text"
             placeholder="Ваш вопрос"
+            v-model="formData.message"
+            required
           ></textarea>
           <div class="footer_form-checkbox_wrapper">
             <input class="footer_form-checkbox" type="checkbox" checked />
@@ -93,6 +100,44 @@ defineProps<{
   homepage: boolean;
   secondPage?: boolean;
 }>();
+
+const isSubmitting = ref(false);
+
+const formData = ref<{
+  name: string;
+  email: string;
+  message: string;
+}>({
+  name: "",
+  email: "",
+  message: "",
+});
+
+const submitForm = async () => {
+  isSubmitting.value = true;
+  try {
+    const response = await fetch("./sendmail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData.value),
+    });
+
+    // if (!response.ok) {
+    //   throw new Error("Ошибка отправки формы");
+    // }
+
+    const result = await response.text(); // или `response.json()` если PHP возвращает JSON
+
+    alert(result);
+    // alert("Письмо успешно отправлено!");
+  } catch (error) {
+    if (error instanceof Error) alert("Произошла ошибка: " + error.message);
+  } finally {
+    isSubmitting.value = false;
+  }
+};
 </script>
 <style scoped>
 /* 1200px */

@@ -29,24 +29,27 @@
       <div class="popup_content">
         <h3 class="popup_title">{{ popupTitle }}</h3>
         <!-- or Попробовать бесплатно  -->
-        <form class="popup_form" name="popup-form">
+        <form class="popup_form" name="popup-form" @submit.prevent="submitForm">
           <input
             class="popup_form-input"
-            name="name"
             type="text"
             placeholder="Имя"
+            v-model="formData.name"
+            required
           />
           <input
             class="popup_form-input"
-            name="phone"
             type="tel"
             placeholder="Телефон"
+            v-model="formData.phone"
+            required
           />
           <input
             class="popup_form-input"
-            name="email"
             type="email"
             placeholder="Email"
+            v-model="formData.email"
+            required
           />
           <div class="popup_form-checkbox_wrapper">
             <input class="popup_form-checkbox" type="checkbox" checked />
@@ -68,6 +71,54 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  homepage: boolean;
+  isOpen: boolean;
+  closePopup: () => void;
+  popupTitle: string;
+}>();
+
+const isSubmitting = ref(false);
+
+const formData = ref<{
+  name: string;
+  email: string;
+  phone: string;
+}>({
+  name: "",
+  email: "",
+  phone: "",
+});
+
+const submitForm = async () => {
+  isSubmitting.value = true;
+  try {
+    const response = await fetch("./sendmail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData.value),
+    });
+
+    // if (!response.ok) {
+    //   throw new Error("Ошибка отправки формы");
+    // }
+
+    const result = await response.text(); // или `response.json()` если PHP возвращает JSON
+
+    alert(result);
+    // alert("Письмо успешно отправлено!");
+  } catch (error) {
+    if (error instanceof Error) alert("Произошла ошибка: " + error.message);
+  } finally {
+    isSubmitting.value = false;
+  }
+};
+</script>
+
 <style scoped>
 .popup {
   display: none;
@@ -240,11 +291,3 @@
   }
 }
 </style>
-<script setup lang="ts">
-defineProps<{
-  homepage: boolean;
-  isOpen: boolean;
-  closePopup: () => void;
-  popupTitle: string;
-}>();
-</script>
