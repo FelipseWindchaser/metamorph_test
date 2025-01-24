@@ -314,7 +314,7 @@ defineProps<{
 .capabilities_card-7_mob {
   display: none;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 681px) and (max-width: 1280px) {
   .capabilities_cards {
     gap: 10px;
   }
@@ -323,6 +323,8 @@ defineProps<{
     gap: 12px;
   }
   .capabilities_card {
+    max-width: 167px;
+    width: 100%;
     padding: 18px 13px 0 18px;
   }
   .capabilities_card-title {
@@ -347,6 +349,7 @@ defineProps<{
     display: flex;
     margin-top: 12px;
     padding: 22px 19px 25px 15px;
+
     justify-content: space-between;
   }
   .capabilities {
@@ -389,7 +392,8 @@ defineProps<{
     flex-shrink: 0;
   }
   .capabilities_card-7 {
-    width: 343px;
+    max-width: 343px;
+    width: 100%;
     height: 170px;
     flex-shrink: 0;
   }
@@ -417,6 +421,259 @@ defineProps<{
   }
   .capabilities_card-button {
     width: 314px;
+    height: 50px;
+    margin: 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 680px) {
+  .capabilities_cards {
+    gap: 10px;
+  }
+
+  .capabilities_cards-container {
+    gap: 12px;
+    height: 100%;
+  }
+  .capabilities_card {
+    padding: 18px 13px 18px 18px;
+    width: 100%;
+  }
+  .capabilities_card-title {
+    font-size: 17px;
+    width: 100%;
+  }
+  .capabilities_card-title_mob {
+    font-size: 20px;
+    width: 100%;
+  }
+  .capabilities_card-text {
+    font-size: 15px;
+    width: 100%;
+  }
+  .capabilities_cards-container_pc {
+    display: none;
+  }
+  .capabilities_cards-container_mob {
+    display: flex;
+  }
+  .capabilities_card-7_mob {
+    display: flex;
+    margin-top: 12px;
+    padding: 22px 19px 25px 15px;
+    justify-content: space-between;
+  }
+  .capabilities {
+    max-width: 343px;
+    width: 100%;
+    /* padding: 0 16px 60px; */
+    margin: 0 auto 60px;
+  }
+  .capabilities_title {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .capabilities_card-1 {
+    height: 100%;
+    max-width: 167px;
+    height: 246px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-2 {
+    height: 100%;
+    max-width: 166px;
+    height: 291px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-3 {
+    height: 100%;
+    max-width: 166px;
+    height: 246px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .capabilities_card-4 {
+    height: 100%;
+    max-width: 167px;
+    height: 407px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-5 {
+    height: 100%;
+    max-width: 167px;
+    height: 208px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .capabilities_card-6 {
+    height: 100%;
+    max-width: 166px;
+    height: 324px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-7 {
+    height: 100%;
+    max-width: 343px;
+    height: 170px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-image_g2 {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    bottom: 5px;
+    right: 17px;
+    z-index: 0;
+  }
+  .capabilities_card-image_g4 {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 26px;
+    right: 19px;
+  }
+  .capabilities_card-image_g6 {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    bottom: 8px;
+    right: 22px;
+  }
+  .capabilities_card-button {
+    max-width: 314px;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .capabilities_cards {
+    gap: auto;
+  }
+
+  .capabilities_cards-container {
+    gap: 12px;
+    height: 100%;
+  }
+  .capabilities_card {
+    padding: 18px 13px 18px 18px;
+    width: 100%;
+  }
+  .capabilities_card-title {
+    font-size: 17px;
+    width: 100%;
+  }
+  .capabilities_card-title_mob {
+    font-size: 20px;
+    width: 100%;
+  }
+  .capabilities_card-text {
+    font-size: 15px;
+    width: 100%;
+  }
+  .capabilities_cards-container_pc {
+    display: none;
+  }
+  .capabilities_cards-container_mob {
+    display: flex;
+  }
+  .capabilities_card-7_mob {
+    display: flex;
+    margin-top: 12px;
+    padding: 22px 19px 25px 15px;
+    justify-content: space-between;
+  }
+  .capabilities {
+    max-width: 288px;
+    /* padding: 0 16px 60px; */
+    margin: 0 auto 60px;
+  }
+  .capabilities_title {
+    max-width: 288px;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .capabilities_card-1 {
+    word-break: break-all;
+    height: 100%;
+    max-width: 134px;
+    height: 266px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-2 {
+    height: 100%;
+    max-width: 134px;
+    height: 361px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-3 {
+    height: 100%;
+    max-width: 134px;
+    height: 246px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .capabilities_card-4 {
+    height: 100%;
+    max-width: 134px;
+    height: 407px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-5 {
+    height: 100%;
+    max-width: 134px;
+    height: 288px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .capabilities_card-6 {
+    height: 100%;
+    max-width: 134px;
+    height: 354px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-7 {
+    height: 100%;
+    max-width: 343px;
+    height: 170px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .capabilities_card-image_g2 {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    bottom: 5px;
+    right: 17px;
+    z-index: 0;
+  }
+  .capabilities_card-image_g4 {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 26px;
+    right: 19px;
+  }
+  .capabilities_card-image_g6 {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    bottom: 8px;
+    right: 22px;
+  }
+  .capabilities_card-button {
+    max-width: 314px;
+    width: 100%;
     height: 50px;
     margin: 0;
   }

@@ -6,6 +6,7 @@
     <h3 :class="['accordion_title', secondPage && 'accordion_title-centered']">
       {{ sectionTitle }}
     </h3>
+
     <AccordionElement
       v-for="element in elements"
       :id="element.id"
@@ -44,7 +45,10 @@ const handleClick = (id: string) => {
 </script>
 <style scoped>
 .accordion {
-  margin: 110px auto;
+  margin: 110px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* max-width: 1200px; */
   width: 100%;
 }
@@ -63,7 +67,8 @@ const handleClick = (id: string) => {
   line-height: 140%; /* 53.2px */
   text-transform: uppercase;
   padding-bottom: 40px;
-  padding-left: 120px;
+  max-width: 1200px;
+  width: 100%;
 }
 .accordion_title-centered {
   text-align: center;
@@ -79,7 +84,7 @@ const handleClick = (id: string) => {
   .accordion_title {
     font-size: 20px;
     padding-bottom: 24px;
-    padding-left: 16px;
+    padding-left: 20px;
   }
 }
 </style>

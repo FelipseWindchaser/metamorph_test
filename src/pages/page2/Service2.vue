@@ -71,6 +71,7 @@ defineProps<{
 
 .service__button {
   max-width: 386px;
+  width: 100%;
   height: 72px;
   margin: 22px auto 110px;
   border-radius: 16px;
@@ -111,6 +112,7 @@ defineProps<{
 .getoffer__button {
   display: flex;
   max-width: 386px;
+  width: 100%;
   height: 72px;
   padding: 11px 61px;
   justify-content: center;

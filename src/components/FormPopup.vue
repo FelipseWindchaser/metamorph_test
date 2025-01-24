@@ -49,7 +49,7 @@
             placeholder="Email"
           />
           <div class="popup_form-checkbox_wrapper">
-            <input class="popup_form-checkbox" type="checkbox" />
+            <input class="popup_form-checkbox" type="checkbox" checked />
             <p class="popup_form-checkbox_text">
               Я соглашаюсь с правилами обработки персональных данных.
             </p>

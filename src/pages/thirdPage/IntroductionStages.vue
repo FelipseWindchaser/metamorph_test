@@ -573,7 +573,7 @@ defineProps<{
 .is_card-4 {
   width: 233px;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 681px) and (max-width: 1280px) {
   .introduction-stages {
     width: 375px;
     padding: 0 16px 60px;
@@ -642,6 +642,85 @@ defineProps<{
   .introduction-stages_button_mob {
     display: flex;
     width: 342px;
+    height: 50px;
+    padding: 22px 65px 20px 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 680px) {
+  .introduction-stages {
+    max-width: 375px;
+    width: 100%;
+    padding: 0 16px 60px;
+  }
+  .introduction-stages_title {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .introduction-stages_cards-wrapper {
+    display: none;
+  }
+  .introduction-stages_wrapper_mob {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+  .introduction-stages_cards-numbers {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .introduction-stages_number-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+  .introduction-stages_card-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+    line-height: 130%;
+    gap: 10px;
+  }
+  .introduction-stages_card-title {
+    font-size: 17px;
+  }
+  .is_card-1 {
+    width: 100%;
+    /* padding: 0 0 55px 0 */
+    padding-bottom: 55px;
+  }
+  .is_card-3 {
+    width: 100%;
+    padding-bottom: 77px;
+  }
+  .is_card-2 {
+    width: 100%;
+    padding-bottom: 77px;
+  }
+  .is_card-4 {
+    width: 100%;
+    padding-bottom: 55px;
+  }
+  .introduction-stages_button_mob {
+    display: flex;
+    max-width: 342px;
+    width: 100%;
     height: 50px;
     padding: 22px 65px 20px 65px;
     justify-content: center;

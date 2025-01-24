@@ -38,18 +38,19 @@ defineProps<{
 <style scoped>
 .accordion_card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  padding: 0 120px;
+  padding: 0;
   width: 100%;
 }
 .accordion_card-wrapper {
   align-items: flex-start;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
-  padding: 18px 0;
+  padding: 18px 10px;
 }
 .rotated-icon {
   transform: rotate(45deg);
@@ -118,6 +119,9 @@ defineProps<{
   }
   .accordion_card_border-none {
     border: none;
+  }
+  .accordion_card-wrapper {
+    padding: 18px 5px;
   }
 }
 </style>

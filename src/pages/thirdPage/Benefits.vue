@@ -89,9 +89,11 @@ defineProps<{
 /* 1200px */
 .benefits {
   display: flex;
-  width: 1440px;
+  /* max-width: 1200px; */
   width: 100%;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 0 269px 110px 120px;
 }
 .benefits_lists {
@@ -135,7 +137,8 @@ defineProps<{
 }
 .benefits_button {
   display: flex;
-  width: 336px;
+  max-width: 336px;
+  width: 100%;
   height: 60px;
   padding: 22px 65px 20px 65px;
   justify-content: center;
@@ -157,11 +160,12 @@ defineProps<{
   cursor: pointer;
   opacity: 0.7;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   .benefits {
     display: flex;
-    width: 375px;
+    max-width: 375px;
     padding: 0 16px 60px;
+    margin: 0 auto;
   }
   .benefits_lists {
     display: flex;

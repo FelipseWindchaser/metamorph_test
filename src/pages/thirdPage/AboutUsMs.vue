@@ -40,6 +40,12 @@
           alt="stocks_mob_image"
           media="(max-width: 680px)"
         />
+        <source
+          class="stocks-image"
+          srcset="../../../static/img/met-images/about-us_stocks_mob.png"
+          alt="stocks_mob_image"
+          media="(max-width: 1280px)"
+        />
         <img
           class="stocks-image"
           src="../../../static/img/met-images/about-us_stocks.png"
@@ -98,7 +104,7 @@
 .stocks-image {
   border-radius: 25px;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 681px) and (max-width: 1280px) {
   .about-us {
     width: 342px;
     padding: 26px 19px 27px 25px;
@@ -138,6 +144,94 @@
     flex-wrap: wrap;
     gap: 16px 14px;
     padding: 23px 0 26px;
+  }
+}
+@media (min-width: 375px) and (max-width: 680px) {
+  .about-us {
+    width: 342px;
+    padding: 26px 19px 27px 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-image: url(../../../static/img/met-images/about-us_gradient_mob.png);
+    background-repeat: no-repeat;
+
+    /* margin-top: 130px; */
+  }
+  .about-us_title {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 36.4px */
+    width: 100%;
+  }
+  .about-us_text-container {
+    width: 100%;
+  }
+  .about-us_card-title {
+    font-size: 50px;
+  }
+  .about-us_card-description {
+    font-size: 15px;
+  }
+  .about-us_card {
+    width: 142px;
+  }
+  .about-us_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    padding: 23px 0 26px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .about-us {
+    max-width: 342px;
+    width: 100%;
+    padding: 26px 19px 27px 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-image: url(../../../static/img/met-images/about-us_gradient_mob.png);
+    background-repeat: no-repeat;
+
+    /* margin-top: 130px; */
+  }
+  .about-us_title {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 36.4px */
+    width: 100%;
+  }
+  .about-us_text-container {
+    width: 100%;
+  }
+  .about-us_card-title {
+    font-size: 50px;
+  }
+  .about-us_card-description {
+    font-size: 15px;
+  }
+  .about-us_card {
+    max-width: 120px;
+  }
+  .about-us_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    padding: 23px 0 26px;
+  }
+  .stocks-image {
+    max-width: 250px;
   }
 }
 /* 1200px */

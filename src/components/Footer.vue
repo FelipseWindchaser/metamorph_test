@@ -55,7 +55,7 @@
             placeholder="Ваш вопрос"
           ></textarea>
           <div class="footer_form-checkbox_wrapper">
-            <input class="footer_form-checkbox" type="checkbox" />
+            <input class="footer_form-checkbox" type="checkbox" checked />
             <p class="footer_form-checkbox_text">
               Я соглашаюсь с правилами обработки персональных данных.
             </p>
