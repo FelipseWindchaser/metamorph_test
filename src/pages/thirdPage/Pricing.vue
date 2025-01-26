@@ -184,313 +184,366 @@
       </tbody>
     </table>
     <div class="pricing_slider">
-      <div class="pricing_slider_arrows">
-        <div class="pricing_slider_arrow pricing_slider_arrow_disabled">
-          <img
-            src="../../../static/img/met-images/pricing_left-arrow.svg"
-            alt="check_icon"
-          />
-        </div>
-        <div class="pricing_slider_arrow">
-          <img
-            src="../../../static/img/met-images/pricing_right-arrow.svg"
-            alt="check_icon"
-          />
-        </div>
-      </div>
       <div class="pricing_slider_slides">
-        <div class="pricing_slider_slide">
-          <p class="pricing_slider_slide-name">Старт</p>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество сотрудников</p>
-            <p class="pricing_slider_slide-text">1</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Точки продаж (включено)</p>
-            <p class="pricing_slider_slide-text">1</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">
-              Подключение интернет-магазина
-            </p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Юридические лица</p>
-            <p class="pricing_slider_slide-text">1</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Объем хранилища</p>
-            <p class="pricing_slider_slide-text">100 мб</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество товаров</p>
-            <p class="pricing_slider_slide-text">∞</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Поддержка маркировки</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">CRM система (включена)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div
-            class="pricing_slider_slide-block pricing_slider_slide-block_last"
-          >
-            <p class="pricing_slider_slide-title">Стоимость в месяц</p>
-            <p class="pricing_slider_slide-text">550 ₽</p>
-            <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
-              *14 дней бесплатного пробного периода для любого из тарифов
-            </p>
-            <button
-              @click="() => openPopup('Попробовать бесплатно')"
-              class="table-button slider-button"
-              type="button"
-            >
-              Начать бесплатный пробный период
-            </button>
+        <div class="pricing_slider_arrows">
+          <button class="pricing_slider_arrow pricing_slider_arrow-left">
+            <img
+              src="../../../static/img/met-images/pricing_left-arrow.svg"
+              alt="check_icon"
+            />
+          </button>
+          <div class="pricing_slider_arrow pricing_slider_arrow-right">
+            <img
+              src="../../../static/img/met-images/pricing_right-arrow.svg"
+              alt="check_icon"
+            />
           </div>
         </div>
-        <div class="pricing_slider_slide hidden">
-          <p class="pricing_slider_slide-name">Базовый</p>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество сотрудников</p>
-            <p class="pricing_slider_slide-text">2</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Точки продаж (включено)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/cross-icon.svg"
-                alt="cross_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">
-              Подключение интернет-магазина
-            </p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Юридические лица</p>
-            <p class="pricing_slider_slide-text">2</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Объем хранилища</p>
-            <p class="pricing_slider_slide-text">500 мб</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество товаров</p>
-            <p class="pricing_slider_slide-text">∞</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Поддержка маркировки</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">CRM система (включена)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div
-            class="pricing_slider_slide-block pricing_slider_slide-block_last"
-          >
-            <p class="pricing_slider_slide-title">Стоимость в месяц</p>
-            <p class="pricing_slider_slide-text">1 300 ₽</p>
-            <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
-              *14 дней бесплатного пробного периода для любого из тарифов
-            </p>
-            <button
-              @click="() => openPopup('Попробовать бесплатно')"
-              class="table-button slider-button"
-              type="button"
-            >
-              Начать бесплатный пробный период
-            </button>
-          </div>
-        </div>
-        <div class="pricing_slider_slide hidden">
-          <p class="pricing_slider_slide-name">Профессиональный</p>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество сотрудников</p>
-            <p class="pricing_slider_slide-text">5</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Точки продаж (включено)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/cross-icon.svg"
-                alt="cross_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">
-              Подключение интернет-магазина
-            </p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Юридические лица</p>
-            <p class="pricing_slider_slide-text">10</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Объем хранилища</p>
-            <p class="pricing_slider_slide-text">2 000 мб</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество товаров</p>
-            <p class="pricing_slider_slide-text">∞</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Поддержка маркировки</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">CRM система (включена)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div
-            class="pricing_slider_slide-block pricing_slider_slide-block_last"
-          >
-            <p class="pricing_slider_slide-title">Стоимость в месяц</p>
-            <p class="pricing_slider_slide-text">3 800 ₽</p>
-            <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
-              *14 дней бесплатного пробного периода для любого из тарифов
-            </p>
-            <button
-              @click="() => openPopup('Попробовать бесплатно')"
-              class="table-button slider-button"
-              type="button"
-            >
-              Начать бесплатный пробный период
-            </button>
-          </div>
-        </div>
-        <div class="pricing_slider_slide hidden">
-          <p class="pricing_slider_slide-name">Корпоративный</p>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество сотрудников</p>
-            <p class="pricing_slider_slide-text">10</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Точки продаж (включено)</p>
-            <p class="pricing_slider_slide-text">5</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">
-              Подключение интернет-магазина
-            </p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Юридические лица</p>
-            <p class="pricing_slider_slide-text">∞</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Объем хранилища</p>
-            <p class="pricing_slider_slide-text">10 000 мб</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Количество товаров</p>
-            <p class="pricing_slider_slide-text">∞</p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">Поддержка маркировки</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div class="pricing_slider_slide-block">
-            <p class="pricing_slider_slide-title">CRM система (включена)</p>
-            <p class="pricing_slider_slide-text">
-              <img
-                src="../../../static/img/met-images/check-icon.svg"
-                alt="check_icon"
-              />
-            </p>
-          </div>
-          <div
-            class="pricing_slider_slide-block pricing_slider_slide-block_last"
-          >
-            <p class="pricing_slider_slide-title">Стоимость в месяц</p>
-            <p class="pricing_slider_slide-text">8 900 ₽</p>
-            <p class="pricing_slider_slide-text pricing_slider_slide-text_grey">
-              *14 дней бесплатного пробного периода для любого из тарифов
-            </p>
-            <button
-              @click="() => openPopup('Попробовать бесплатно')"
-              class="table-button slider-button"
-              type="button"
-            >
-              Начать бесплатный пробный период
-            </button>
-          </div>
-        </div>
+        <swiper
+          :observer="true"
+          :observeParents="true"
+          :slidesPerView="1"
+          :speed="500"
+          :modules="[Navigation]"
+          :breakpoints="{
+            1024: {
+              spaceBetween: 10,
+            },
+            1220: {
+              spaceBetween: 20,
+            },
+          }"
+          :navigation="{
+            prevEl: '.pricing_slider_arrow-left',
+            nextEl: '.pricing_slider_arrow-right',
+          }"
+        >
+          <swiper-slide>
+            <div class="pricing_slider_slide">
+              <p class="pricing_slider_slide-name">Старт</p>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество сотрудников</p>
+                <p class="pricing_slider_slide-text">1</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Точки продаж (включено)
+                </p>
+                <p class="pricing_slider_slide-text">1</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Подключение интернет-магазина
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Юридические лица</p>
+                <p class="pricing_slider_slide-text">1</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Объем хранилища</p>
+                <p class="pricing_slider_slide-text">100 мб</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество товаров</p>
+                <p class="pricing_slider_slide-text">∞</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Поддержка маркировки</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">CRM система (включена)</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div
+                class="pricing_slider_slide-block pricing_slider_slide-block_last"
+              >
+                <p class="pricing_slider_slide-title">Стоимость в месяц</p>
+                <p class="pricing_slider_slide-text">550 ₽</p>
+                <p
+                  class="pricing_slider_slide-text pricing_slider_slide-text_grey"
+                >
+                  *14 дней бесплатного пробного периода для любого из тарифов
+                </p>
+                <button
+                  @click="() => openPopup('Попробовать бесплатно')"
+                  class="table-button slider-button"
+                  type="button"
+                >
+                  Начать бесплатный пробный период
+                </button>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="pricing_slider_slide">
+              <p class="pricing_slider_slide-name">Базовый</p>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество сотрудников</p>
+                <p class="pricing_slider_slide-text">2</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Точки продаж (включено)
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/cross-icon.svg"
+                    alt="cross_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Подключение интернет-магазина
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Юридические лица</p>
+                <p class="pricing_slider_slide-text">2</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Объем хранилища</p>
+                <p class="pricing_slider_slide-text">500 мб</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество товаров</p>
+                <p class="pricing_slider_slide-text">∞</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Поддержка маркировки</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">CRM система (включена)</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div
+                class="pricing_slider_slide-block pricing_slider_slide-block_last"
+              >
+                <p class="pricing_slider_slide-title">Стоимость в месяц</p>
+                <p class="pricing_slider_slide-text">1 300 ₽</p>
+                <p
+                  class="pricing_slider_slide-text pricing_slider_slide-text_grey"
+                >
+                  *14 дней бесплатного пробного периода для любого из тарифов
+                </p>
+                <button
+                  @click="() => openPopup('Попробовать бесплатно')"
+                  class="table-button slider-button"
+                  type="button"
+                >
+                  Начать бесплатный пробный период
+                </button>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="pricing_slider_slide">
+              <p class="pricing_slider_slide-name">Профессиональный</p>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество сотрудников</p>
+                <p class="pricing_slider_slide-text">5</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Точки продаж (включено)
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/cross-icon.svg"
+                    alt="cross_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Подключение интернет-магазина
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Юридические лица</p>
+                <p class="pricing_slider_slide-text">10</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Объем хранилища</p>
+                <p class="pricing_slider_slide-text">2 000 мб</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество товаров</p>
+                <p class="pricing_slider_slide-text">∞</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Поддержка маркировки</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">CRM система (включена)</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div
+                class="pricing_slider_slide-block pricing_slider_slide-block_last"
+              >
+                <p class="pricing_slider_slide-title">Стоимость в месяц</p>
+                <p class="pricing_slider_slide-text">3 800 ₽</p>
+                <p
+                  class="pricing_slider_slide-text pricing_slider_slide-text_grey"
+                >
+                  *14 дней бесплатного пробного периода для любого из тарифов
+                </p>
+                <button
+                  @click="() => openPopup('Попробовать бесплатно')"
+                  class="table-button slider-button"
+                  type="button"
+                >
+                  Начать бесплатный пробный период
+                </button>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="pricing_slider_slide">
+              <p class="pricing_slider_slide-name">Корпоративный</p>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество сотрудников</p>
+                <p class="pricing_slider_slide-text">10</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Точки продаж (включено)
+                </p>
+                <p class="pricing_slider_slide-text">5</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">
+                  Подключение интернет-магазина
+                </p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Юридические лица</p>
+                <p class="pricing_slider_slide-text">∞</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Объем хранилища</p>
+                <p class="pricing_slider_slide-text">10 000 мб</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Количество товаров</p>
+                <p class="pricing_slider_slide-text">∞</p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">Поддержка маркировки</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div class="pricing_slider_slide-block">
+                <p class="pricing_slider_slide-title">CRM система (включена)</p>
+                <p class="pricing_slider_slide-text">
+                  <img
+                    src="../../../static/img/met-images/check-icon.svg"
+                    alt="check_icon"
+                  />
+                </p>
+              </div>
+              <div
+                class="pricing_slider_slide-block pricing_slider_slide-block_last"
+              >
+                <p class="pricing_slider_slide-title">Стоимость в месяц</p>
+                <p class="pricing_slider_slide-text">8 900 ₽</p>
+                <p
+                  class="pricing_slider_slide-text pricing_slider_slide-text_grey"
+                >
+                  *14 дней бесплатного пробного периода для любого из тарифов
+                </p>
+                <button
+                  @click="() => openPopup('Попробовать бесплатно')"
+                  class="table-button slider-button"
+                  type="button"
+                >
+                  Начать бесплатный пробный период
+                </button>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
   </section>
 </template>
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper/modules";
 defineProps<{
   openPopup: (title?: string) => void;
 }>();
 </script>
 <style scoped>
+.swiper-slide {
+  width: auto;
+}
+
+.pricing_slider_arrow.swiper-button-disabled {
+  background: #c1ebff;
+}
 /* 1200px */
 .pricing {
   width: 1200px;
@@ -576,6 +629,11 @@ defineProps<{
 .pricing_slider {
   display: none;
 }
+
+.pricing_slider_slides {
+  width: 100%;
+  overflow: hidden;
+}
 @media (min-width: 681px) and (max-width: 1280px) {
   .pricing {
     width: 375px;
@@ -598,6 +656,7 @@ defineProps<{
     border-radius: 20px;
     background: #eaf2fa;
     padding: 27px 15px 0;
+    width: 100%;
   }
   .pricing_slider_slide-block {
     display: flex;
@@ -680,8 +739,10 @@ defineProps<{
     justify-content: space-between;
     position: absolute;
     top: 27px;
+    z-index: 3;
   }
   .pricing_slider_arrow {
+    border: none;
     background: #64cdff;
     width: 40px;
     height: 40px;
@@ -689,9 +750,6 @@ defineProps<{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .pricing_slider_arrow_disabled {
-    background: #c1ebff;
   }
   .hidden {
     display: none;
@@ -813,9 +871,6 @@ defineProps<{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .pricing_slider_arrow_disabled {
-    background: #c1ebff;
   }
   .hidden {
     display: none;
