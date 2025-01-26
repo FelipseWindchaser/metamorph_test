@@ -14,7 +14,7 @@
   <Logistics :openPopup="openPopup" />
   <Marketplaces />
   <BlueCaption />
-  <!-- <Reviews /> -->
+  <Reviews />
   <!-- раскомментировать когда появится контент -->
   <Faq />
   <Footer :homepage="true" />
