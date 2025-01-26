@@ -2,16 +2,20 @@
   <section class="client-results">
     <h3 class="client-results__title">результаты наших клиентов</h3>
     <div class="client-results__slider">
-      <div class="client-results__slider-left-arrow">
+      <button
+        class="client-results__slider-arrow client-results__slider-left-arrow"
+      >
         <img
           src="../../../static/img/page2-images/unoptimized/left-arrow.svg"
         />
-      </div>
-      <div class="client-results__slider-right-arrow active-arrow">
+      </button>
+      <button
+        class="client-results__slider-arrow client-results__slider-right-arrow"
+      >
         <img
           src="../../../static/img/page2-images/unoptimized/right-arrow.svg"
         />
-      </div>
+      </button>
       <div class="client-results__slider-pagination">
         <div class="client-results__slider-pagination-dot active-dot"></div>
         <div class="client-results__slider-pagination-dot"></div>
@@ -19,87 +23,347 @@
         <div class="client-results__slider-pagination-dot"></div>
         <div class="client-results__slider-pagination-dot"></div>
       </div>
-      <div class="client-results__slide">
-        <div class="client-results__slide-cards">
-          <div class="client-results__slide-description">
-            <p class="client-results__slide-title">Товары для дома и дачи</p>
-            <p class="client-results__slide-text">
-              Крупный оптовый поставщик товаров для дома и строительства в
-              торговые сети DIY, Леруа Мерлен, Obi и другие.
-            </p>
-          </div>
-          <div class="client-results__slide-card">
-            <p class="client-results__slide-card-title">Задачи</p>
-            <ul class="client-results__slide-card-list">
-              <li class="client-results__slide-card-list-item">
-                Увеличить продажи
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Скорректировать ассортимент
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Настроить рекламные кампании
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Настроить личный кабинет для увеличения эффективности процесса
-                продаж
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="client-results__slide-cards">
-          <div class="client-results__slide-card">
-            <p class="client-results__slide-card-title">На старте</p>
-            <ul class="client-results__slide-card-list">
-              <li class="client-results__slide-card-list-item">
-                Начало работы – февраль
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Количество SKU – 419
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Выручка = 299 429 руб.
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Заказы = 236 шт.
-              </li>
-            </ul>
-          </div>
+      <swiper
+        :observer="true"
+        :observeParents="true"
+        :slidesPerView="1"
+        :speed="500"
+        :modules="[Navigation, Pagination]"
+        :pagination="{ clickable: true }"
+        :spaceBetween="5"
+        :breakpoints="{
+          1024: {
+            spaceBetween: 10,
+          },
+          1220: {
+            spaceBetween: 20,
+          },
+        }"
+        :navigation="{
+          prevEl: '.client-results__slider-left-arrow',
+          nextEl: '.client-results__slider-right-arrow',
+        }"
+      >
+        <swiper-slide>
+          <div class="client-results__slide">
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-description">
+                <p class="client-results__slide-title">
+                  Товары для дома и дачи
+                </p>
+                <p class="client-results__slide-text">
+                  Крупный оптовый поставщик товаров для дома и строительства в
+                  торговые сети DIY, Леруа Мерлен, Obi и другие.
+                </p>
+              </div>
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Задачи</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Увеличить продажи
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Скорректировать ассортимент
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить рекламные кампании
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить личный кабинет для увеличения эффективности
+                    процесса продаж
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">На старте</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Начало работы – февраль
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 419
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка = 299 429 руб.
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Заказы = 236 шт.
+                  </li>
+                </ul>
+              </div>
 
-          <div class="client-results__slide-card">
-            <p class="client-results__slide-card-title">Результат</p>
-            <ul class="client-results__slide-card-list">
-              <li class="client-results__slide-card-list-item">
-                Количество заказов увеличилось до 1167 шт., рост на 494%
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Выручка за май 2023 составила 1 431 964 руб., рост на 478%
-              </li>
-              <li class="client-results__slide-card-list-item">
-                В 18 раз увеличилось количество показов товара
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Количество SKU – 471
-              </li>
-              <li class="client-results__slide-card-list-item">
-                Подключение модели FBY и Экспресс
-              </li>
-              <li class="client-results__slide-card-list-item">
-                ДРР в разрезе 2-х недель снизилось с 6.14 % до 0.99%
-              </li>
-            </ul>
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Результат</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Количество заказов увеличилось до 1167 шт., рост на 494%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка за май 2023 составила 1 431 964 руб., рост на 478%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    В 18 раз увеличилось количество показов товара
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 471
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Подключение модели FBY и Экспресс
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    ДРР в разрезе 2-х недель снизилось с 6.14 % до 0.99%
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="client-results__slide">
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-description">
+                <p class="client-results__slide-title">
+                  Товары для дома и дачи
+                </p>
+                <p class="client-results__slide-text">
+                  Крупный оптовый поставщик товаров для дома и строительства в
+                  торговые сети DIY, Леруа Мерлен, Obi и другие.
+                </p>
+              </div>
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Задачи</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Увеличить продажи
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Скорректировать ассортимент
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить рекламные кампании
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить личный кабинет для увеличения эффективности
+                    процесса продаж
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">На старте</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Начало работы – февраль
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 419
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка = 299 429 руб.
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Заказы = 236 шт.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Результат</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Количество заказов увеличилось до 1167 шт., рост на 494%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка за май 2023 составила 1 431 964 руб., рост на 478%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    В 18 раз увеличилось количество показов товара
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 471
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Подключение модели FBY и Экспресс
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    ДРР в разрезе 2-х недель снизилось с 6.14 % до 0.99%
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="client-results__slide">
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-description">
+                <p class="client-results__slide-title">
+                  Товары для дома и дачи
+                </p>
+                <p class="client-results__slide-text">
+                  Крупный оптовый поставщик товаров для дома и строительства в
+                  торговые сети DIY, Леруа Мерлен, Obi и другие.
+                </p>
+              </div>
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Задачи</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Увеличить продажи
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Скорректировать ассортимент
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить рекламные кампании
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить личный кабинет для увеличения эффективности
+                    процесса продаж
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">На старте</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Начало работы – февраль
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 419
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка = 299 429 руб.
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Заказы = 236 шт.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Результат</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Количество заказов увеличилось до 1167 шт., рост на 494%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка за май 2023 составила 1 431 964 руб., рост на 478%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    В 18 раз увеличилось количество показов товара
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 471
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Подключение модели FBY и Экспресс
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    ДРР в разрезе 2-х недель снизилось с 6.14 % до 0.99%
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="client-results__slide">
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-description">
+                <p class="client-results__slide-title">
+                  Товары для дома и дачи
+                </p>
+                <p class="client-results__slide-text">
+                  Крупный оптовый поставщик товаров для дома и строительства в
+                  торговые сети DIY, Леруа Мерлен, Obi и другие.
+                </p>
+              </div>
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Задачи</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Увеличить продажи
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Скорректировать ассортимент
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить рекламные кампании
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Настроить личный кабинет для увеличения эффективности
+                    процесса продаж
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-results__slide-cards">
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">На старте</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Начало работы – февраль
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 419
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка = 299 429 руб.
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Заказы = 236 шт.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="client-results__slide-card">
+                <p class="client-results__slide-card-title">Результат</p>
+                <ul class="client-results__slide-card-list">
+                  <li class="client-results__slide-card-list-item">
+                    Количество заказов увеличилось до 1167 шт., рост на 494%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Выручка за май 2023 составила 1 431 964 руб., рост на 478%
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    В 18 раз увеличилось количество показов товара
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Количество SKU – 471
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    Подключение модели FBY и Экспресс
+                  </li>
+                  <li class="client-results__slide-card-list-item">
+                    ДРР в разрезе 2-х недель снизилось с 6.14 % до 0.99%
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/pagination";
+</script>
 
 <style scoped>
 .client-results {
   padding: 0 120px;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bottom: 32px;
 }
 .client-results__title {
   color: #181818;
@@ -116,28 +380,28 @@
   position: relative;
 }
 
-.client-results__slider-left-arrow {
+.client-results__slider-arrow {
+  border: none;
   width: 50px;
   height: 50px;
-  background: #99e4f4;
+  background-color: #00caf5;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   position: absolute;
   top: 45%;
+  z-index: 3;
+}
+
+.swiper-button-disabled {
+  background: #99e4f4;
+}
+
+.client-results__slider-left-arrow {
   left: 20px;
 }
 .client-results__slider-right-arrow {
-  width: 50px;
-  height: 50px;
-  background: #99e4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 45%;
   right: 20px;
 }
 .client-results__slider-left-arrow:hover {
@@ -149,9 +413,6 @@
   cursor: pointer;
   opacity: 0.85;
   transition: 0.2s;
-}
-.active-arrow {
-  background-color: #00caf5;
 }
 .client-results__slider-pagination {
   display: flex;
@@ -319,6 +580,7 @@
     padding: 0 16px;
     max-width: 900px;
     width: 100%;
+    --swiper-pagination-bottom: 104px;
   }
   .client-results__title {
     font-size: 24px;
