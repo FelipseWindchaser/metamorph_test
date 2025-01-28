@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header_container_pc">
-      <div class="header_logo">
+      <a href="https://metamorph.group/" class="header_logo">
         <picture>
           <source
             srcset="../../static/img/met-images/logo_mob.svg"
@@ -9,7 +9,7 @@
           />
           <img src="../../static/img/met-images/logo.svg" alt="logo" />
         </picture>
-      </div>
+      </a>
       <nav class="header_nav">
         <div class="header_menu">
           <a href="https://metamorph.group/" class="header_menu-link"
