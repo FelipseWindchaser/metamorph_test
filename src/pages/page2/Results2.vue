@@ -1,5 +1,5 @@
 <template>
-  <section class="results">
+  <section class="results" id="results">
     <h3 class="results__title">
       Какой результат вы получите,<br />
       если обратитесь за продвижением к нам?

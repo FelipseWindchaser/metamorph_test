@@ -1,6 +1,6 @@
 <template>
   <section class="benefits">
-    <h3 class="benefits_title">Что вы получите с «МойСклад»?</h3>
+    <h3 class="benefits_title">Что вы получите с «Мой Склад»?</h3>
     <div class="benefits_lists">
       <ul class="benefits_list">
         <li class="benefits_list-item">

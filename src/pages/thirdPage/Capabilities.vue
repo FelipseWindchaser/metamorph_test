@@ -1,6 +1,6 @@
 <template>
-  <section class="capabilities">
-    <h3 class="capabilities_title">что вы получите с внедрением «МойСклад»</h3>
+  <section class="capabilities" id="capabilities">
+    <h3 class="capabilities_title">что вы получите с внедрением «Мой Склад»</h3>
     <div class="capabilities_cards">
       <div class="capabilities_cards-container capabilities_cards-container_pc">
         <div class="capabilities_card capabilities_card-1">

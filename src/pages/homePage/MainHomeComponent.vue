@@ -15,7 +15,7 @@
   <Marketplaces />
   <BlueCaption />
   <!-- <Reviews /> -->
-  <!-- раскомментировать когда появится контент -->
+  <!-- раскомментировать, когда появится контент -->
   <Faq />
   <Footer :homepage="true" />
 </template>

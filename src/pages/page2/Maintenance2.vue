@@ -1,5 +1,5 @@
 <template>
-  <section class="maintenance">
+  <section class="maintenance" id="maintenance">
     <h3 class="maintenance__title">начальные этапы сопровождения</h3>
     <div class="maintenance__content">
       <div class="maintenance__cards">

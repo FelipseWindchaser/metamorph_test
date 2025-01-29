@@ -2,7 +2,7 @@
   <section class="presentation" id="presentation">
     <div class="presentation_head-content">
       <h3 class="presentation_title section-title">
-        Почему «МойСклад» — идеальное решение для вашего бизнеса?
+        Почему «Мой Склад» — идеальное решение для вашего бизнеса?
       </h3>
       <div class="presentation_tag-container">
         <p class="presentation_tag-text">Подходит для любого типа торговли</p>

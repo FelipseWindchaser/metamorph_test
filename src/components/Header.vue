@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="header_container_pc">
+    <div v-if="page === 'home'" class="header_container_pc">
       <a href="https://metamorph.group/" class="header_logo">
         <picture>
           <source
@@ -12,13 +12,28 @@
       </a>
       <nav class="header_nav">
         <div class="header_menu">
-          <a href="https://metamorph.group/" class="header_menu-link"
-            >Главная</a
+          <a class="header_menu-link" href="#fulfillment">Возможности</a>
+          <a class="header_menu-link" href="#about-us">Схема работы</a>
+          <a class="header_menu-link" href="#fulfillment-advantages"
+            >Преимущества</a
           >
-          <a class="header_menu-link" :href="pageLink">О нас</a>
-          <!-- <a href="#reviews" class="header_menu-link">Отзывы и кейсы</a> -->
           <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
-          <button
+          <div class="header_menu-container">
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/mp-marketing/"
+              target="_blank"
+              >Маркетинг на маркетплейсах</a
+            >
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/msklad-erp/"
+              target="_blank"
+              >МойСклад в Армении</a
+            >
+          </div>
+
+          <!-- <button
             @click="() => openPopup()"
             type="button"
             :class="`header_menu-button ${
@@ -26,7 +41,100 @@
             } `"
           >
             КОНСУЛЬТАЦИЯ
-          </button>
+          </button> -->
+        </div>
+      </nav>
+    </div>
+    <div v-else-if="page === 'mp-marketing'" class="header_container_pc">
+      <a href="https://metamorph.group/" class="header_logo">
+        <picture>
+          <source
+            srcset="../../static/img/met-images/logo_mob.svg"
+            media="(max-width: 680px)"
+          />
+          <img src="../../static/img/met-images/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <nav class="header_nav">
+        <div class="header_menu">
+          <a class="header_menu-link" href="#service">Услуги по продвижению</a>
+          <a class="header_menu-link" href="#advantages">Преимущества</a>
+          <a class="header_menu-link" href="#maintenance">Этапы сопровождения</a
+          ><a class="header_menu-link" href="#results"
+            >Результаты продвижения</a
+          >
+          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+          <div class="header_menu-container">
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/mp-marketing/"
+              target="_blank"
+              >Маркетинг на маркетплейсах</a
+            >
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/msklad-erp/"
+              target="_blank"
+              >МойСклад в Армении</a
+            >
+          </div>
+
+          <!-- <button
+            @click="() => openPopup()"
+            type="button"
+            :class="`header_menu-button ${
+              homepage ? ' orange-button' : ' blue-button'
+            } `"
+          >
+            КОНСУЛЬТАЦИЯ
+          </button> -->
+        </div>
+      </nav>
+    </div>
+    <div v-else-if="page === 'msklad-erp'" class="header_container_pc">
+      <a href="https://metamorph.group/" class="header_logo">
+        <picture>
+          <source
+            srcset="../../static/img/met-images/logo_mob.svg"
+            media="(max-width: 680px)"
+          />
+          <img src="../../static/img/met-images/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <nav class="header_nav">
+        <div class="header_menu">
+          <a class="header_menu-link" href="#presentation"
+            >МойСклад - отличный выбор для бизнеса</a
+          >
+          <a class="header_menu-link" href="#advantages">Преимущества</a>
+          <a class="header_menu-link" href="#capabilities"
+            >Подробнее о плюсах внедрения сервиса</a
+          ><a class="header_menu-link" href="#pricing">Тарифные планы</a>
+          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+          <div class="header_menu-container">
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/mp-marketing/"
+              target="_blank"
+              >Маркетинг на маркетплейсах</a
+            >
+            <a
+              class="header_menu-link link-bold"
+              href="https://metamorph.group/msklad-erp/"
+              target="_blank"
+              >МойСклад в Армении</a
+            >
+          </div>
+
+          <!-- <button
+            @click="() => openPopup()"
+            type="button"
+            :class="`header_menu-button ${
+              homepage ? ' orange-button' : ' blue-button'
+            } `"
+          >
+            КОНСУЛЬТАЦИЯ
+          </button> -->
         </div>
       </nav>
     </div>
@@ -104,13 +212,33 @@
           </svg>
         </div>
       </div>
-      <div :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`">
-        <!-- add active to header_menu_mob -->
-        <a href="https://metamorph.group/" class="header_menu-link">Главная</a>
-        <a class="header_menu-link" :href="pageLink">О нас</a>
-        <!-- <a href="#" class="header_menu-link">Отзывы и кейсы</a> -->
+      <div
+        v-if="page === 'home'"
+        :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`"
+      >
+        <a class="header_menu-link" href="#fulfillment">Возможности</a>
+        <a class="header_menu-link" href="#about-us">Схема работы</a>
+        <a class="header_menu-link" href="#fulfillment-advantages"
+          >Преимущества</a
+        >
         <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
-        <button
+        <div class="header_menu-container_mob">
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/mp-marketing/"
+            target="_blank"
+            >Маркетинг на маркетплейсах</a
+          >
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/msklad-erp/"
+            target="_blank"
+            >МойСклад в Армении</a
+          >
+          <!-- <a href="https://metamorph.group/" class="header_menu-link">Главная</a>
+        <a class="header_menu-link" :href="pageLink">О нас</a>
+        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a> -->
+          <!-- <button
           @click="() => openPopup()"
           type="button"
           :class="`header_menu-button ${
@@ -118,14 +246,66 @@
           } `"
         >
           КОНСУЛЬТАЦИЯ
-        </button>
+        </button> -->
+        </div>
+      </div>
+      <div
+        v-else-if="page === 'mp-marketing'"
+        :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`"
+      >
+        <a class="header_menu-link" href="#service">Услуги по продвижению</a>
+        <a class="header_menu-link" href="#advantages">Преимущества</a>
+        <a class="header_menu-link" href="#maintenance">Этапы сопровождения</a
+        ><a class="header_menu-link" href="#results">Результаты продвижения</a>
+        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+        <div class="header_menu-container_mob">
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/mp-marketing/"
+            target="_blank"
+            >Маркетинг на маркетплейсах</a
+          >
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/msklad-erp/"
+            target="_blank"
+            >МойСклад в Армении</a
+          >
+        </div>
+      </div>
+      <div
+        v-else-if="page === 'msklad-erp'"
+        :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`"
+      >
+        <a class="header_menu-link" href="#presentation"
+          >МойСклад - отличный выбор для бизнеса</a
+        >
+        <a class="header_menu-link" href="#advantages">Преимущества</a>
+        <a class="header_menu-link" href="#capabilities"
+          >Подробнее о плюсах внедрения сервиса</a
+        ><a class="header_menu-link" href="#pricing">Тарифные планы</a>
+        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+        <div class="header_menu-container_mob">
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/mp-marketing/"
+            target="_blank"
+            >Маркетинг на маркетплейсах</a
+          >
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group/msklad-erp/"
+            target="_blank"
+            >МойСклад в Армении</a
+          >
+        </div>
       </div>
     </div>
   </header>
 </template>
 <script setup lang="ts">
 const props = defineProps<{
-  page: "home" | "marketplaces" | "moysklad";
+  page: "home" | "mp-marketing" | "msklad-erp";
   openPopup: (title?: string) => void;
 }>();
 const homepage = props.page === "home";
@@ -133,9 +313,9 @@ const pageLink = computed(() => {
   switch (props.page) {
     case "home":
       return "#about-us";
-    case "marketplaces":
+    case "mp-marketing":
       return "#service";
-    case "moysklad":
+    case "msklad-erp":
       return "#presentation";
     default:
       return "https://metamorph.group/";
@@ -143,9 +323,10 @@ const pageLink = computed(() => {
 });
 
 const isNavOpen = ref(false);
+// console.log(isNavOpen);
 const openNav = () => {
+  // console.log(isNavOpen);
   isNavOpen.value = true;
-  console.log(isNavOpen);
 };
 const closeNav = () => {
   isNavOpen.value = false;
@@ -157,13 +338,19 @@ const closeNav = () => {
   display: flex;
   justify-content: space-between;
   padding: 30px 8.33vw;
+  gap: 50px;
   box-shadow: 0 6px 16px #00000014;
   position: relative;
 }
 .header_menu {
   display: flex;
-  gap: 45px;
+  gap: 20px;
   align-items: center;
+}
+.header_menu-container {
+  display: flex;
+  gap: 45px;
+  padding-left: 30px;
 }
 .header_menu-button {
   display: flex;
@@ -188,6 +375,11 @@ const closeNav = () => {
   font-size: 15px;
   line-height: 130%;
   font-weight: 400;
+  /* text-align: center; */
+  max-width: 140px;
+}
+.link-bold {
+  font-weight: bold;
 }
 .header_container_mob {
   display: none;
@@ -195,7 +387,25 @@ const closeNav = () => {
 .header_menu-link:hover {
   opacity: 0.7;
 }
-@media (min-width: 320px) and (max-width: 1280px) {
+@media (min-width: 1359px) and (max-width: 1690px) {
+  .header_menu {
+    gap: 20px;
+  }
+  .header_menu-link {
+    max-width: 140px;
+  }
+  .header_menu-container {
+    display: flex;
+    gap: 20px;
+    padding-left: 30px;
+    max-width: 300px;
+    width: 100%;
+  }
+  .header_menu-container_mob {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 1360px) {
   .header_menu_mob {
     display: none;
     flex-direction: column;
@@ -245,11 +455,21 @@ const closeNav = () => {
     padding: 17px 16px;
     z-index: 2;
   }
+  .header_menu-button_mob_nav-closed {
+    cursor: pointer;
+  }
   .header_menu-button_mob_nav-opened {
     display: none;
+    cursor: pointer;
   }
   .hidden {
     display: none;
+  }
+  .header_menu-container_mob {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
   }
 }
 </style>

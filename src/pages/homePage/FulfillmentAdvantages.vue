@@ -1,7 +1,7 @@
 <template>
-  <section class="fulfillment-advantages">
+  <section class="fulfillment-advantages" id="fulfillment-advantages">
     <h3 class="fulfillment-advantages_title">
-      Преимущества фулфилмента <br />от Metamorph
+      Преимущества фулфилмента от Metamorph
     </h3>
     <div class="fulfillment-advantages_cards">
       <div class="fulfillment-advantages_card">

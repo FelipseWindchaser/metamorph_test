@@ -1,8 +1,8 @@
 <template>
-  <section class="fulfillment">
+  <section class="fulfillment" id="fulfillment">
     <div class="fulfillment_title-container">
       <h3 class="fulfillment_title section-title">
-        КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ <br />ФУЛФИЛМЕНТА
+        КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ ФУЛФИЛМЕНТА
       </h3>
     </div>
 
@@ -68,7 +68,7 @@
                 src="../../../static/img/met-images/dostavka.svg"
                 alt="dostavka_icon"
               />
-              <p class="fulfillment_card-title">Забор <br />и доставка</p>
+              <p class="fulfillment_card-title">Забор и доставка</p>
             </div>
 
             <p class="fulfillment_text">
@@ -108,7 +108,7 @@
                 alt="cursor_icon"
               />
               <p class="fulfillment_card-title learn-more-title">
-                Узнать больше <br />о наших услугах
+                Узнать больше о наших услугах
               </p>
             </div>
 

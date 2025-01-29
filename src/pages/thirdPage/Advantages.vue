@@ -1,6 +1,6 @@
 <template>
-  <section class="advantages">
-    <h3 class="advantages_title section-title">Преимущества «МойСклад»</h3>
+  <section class="advantages" id="advantages">
+    <h3 class="advantages_title section-title">Преимущества «Мой Склад»</h3>
     <div class="advantages_tag-container">
       <p class="advantages_tag-text">Почему клиенты выбирают «МойСклад»?</p>
     </div>

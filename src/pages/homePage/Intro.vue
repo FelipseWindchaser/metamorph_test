@@ -2,15 +2,14 @@
   <section class="intro">
     <div class="intro_text-container">
       <div>
-        <h1 class="intro_title">ПОМОЖЕМ ВАМ <br />НА МАРКЕТПЛЕЙСАХ</h1>
+        <h1 class="intro_title">ПОМОЖЕМ ВАМ НА МАРКЕТПЛЕЙСАХ</h1>
         <p class="intro_subtitle">Фулфилмент в Ереване</p>
       </div>
 
       <div class="intro_text-background">
         <div class="intro_text-cloud">
           <p class="intro_card-title intro_text">
-            Берем на себя операционку и маркетинг. <br />С вас только товары и
-            цены
+            Берем на себя операционку и маркетинг. С вас только товары и цены
           </p>
           <div class="intro_text-cards">
             <div class="intro_text-card">

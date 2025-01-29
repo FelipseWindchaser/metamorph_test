@@ -1,8 +1,8 @@
 <template>
   <section class="logistics">
     <h3 class="logistics_title">
-      Ваши товары — в надежных руках: комплексный фулфилмент <br />и поставки из
-      Китая и Армении
+      Ваши товары — в надежных руках: комплексный фулфилмент и поставки из Китая
+      и Армении
     </h3>
     <div class="logistics_wrapper">
       <div class="logistics_content-container">

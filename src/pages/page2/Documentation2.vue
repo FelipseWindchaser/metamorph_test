@@ -1,8 +1,7 @@
 <template>
   <section class="documentation">
     <h3 class="documentation__title">
-      Поможем с расшифровкой<br />
-      документации маркетплейсов
+      Поможем с расшифровкой документации маркетплейсов
     </h3>
     <div class="documentation__cards">
       <div class="documentation__card">

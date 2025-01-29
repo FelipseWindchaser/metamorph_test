@@ -15,26 +15,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
 
-       // Проверяем обязательные поля
-       $name = !empty($data['name']) ? htmlspecialchars(trim($data['name'])) : 'Не указано';
-       $email = !empty($data['email']) ? htmlspecialchars(trim($data['email'])) : 'Не указано';
-       $phone = !empty($data['phone']) ? htmlspecialchars(trim($data['phone'])) : 'Не указано';
-       $message = !empty($data['message']) ? htmlspecialchars(trim($data['message'])) : 'Не указано';
+        // Проверяем обязательные поля
+        $name = !empty($data['name']) ? htmlspecialchars(trim($data['name'])) : 'Не указано';
+        $email = !empty($data['email']) ? htmlspecialchars(trim($data['email'])) : 'Не указано';
+        $phone = !empty($data['phone']) ? htmlspecialchars(trim($data['phone'])) : 'Не указано';
+        $message = !empty($data['message']) ? htmlspecialchars(trim($data['message'])) : 'Не указано';
 
-    //    $subject = htmlspecialchars(trim($data['subject'])) == "Вопрос" ? "Новый вопрос с сайта metamorph" ? "Новая заявка с сайта metamorph"
+        // Список email-адресов, куда нужно отправить письмо
+        $recipients = [
+            "vvx@metamorph.group",
+            "avk@metamorph.group", 
+            "snr@metamorph.group"
+        ];
 
-       // Формируем сообщение
-       $to = "halocost1@gmail.com"; // Кому отправляем
-       $subject = "Новая заявка с сайта metamorph";
-       $body = "Имя: $name\nEmail: $email\nТелефон: $phone\nСообщение: $message";
-       $headers = "From: no-reply@metamorph.com";
+        // Формируем сообщение
+        $subject = "Новая заявка с сайта metamorph";
+        $body = "Имя: $name\nEmail: $email\nТелефон: $phone\nСообщение: $message";
+        $headers = "From: no-reply@metamorph.com";
 
-       // Отправка письма
-       if (mail($to, $subject, $body, $headers)) {
-           echo 'Письмо успешно отправлено';
-       } else {
-           echo 'Ошибка при отправке письма';
-       }
+        // Флаг для отслеживания успешной отправки
+        $allSent = true;
+
+        // Отправка письма каждому получателю
+        foreach ($recipients as $to) {
+            if (!mail($to, $subject, $body, $headers)) {
+                $allSent = false;
+            }
+        }
+
+        // Результат отправки
+        if ($allSent) {
+            echo 'Письма успешно отправлены';
+        } else {
+            echo 'Ошибка при отправке писем';
+        }
     } else {
         // Обработка ошибок, если JSON некорректный
         echo 'Некорректные данные';

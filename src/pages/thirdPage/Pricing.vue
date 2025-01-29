@@ -1,6 +1,6 @@
 <template>
-  <section class="pricing">
-    <h3 class="pricing_title">тарифные планы «МойСклад» для вашего бизнеса</h3>
+  <section class="pricing" id="pricing">
+    <h3 class="pricing_title">тарифные планы «Мой Склад» для вашего бизнеса</h3>
     <table class="pricing_table">
       <thead>
         <tr>

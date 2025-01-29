@@ -5,7 +5,7 @@
     :closePopup="closePopup"
     :popupTitle="popupTitle"
   />
-  <Header :page="'moysklad'" :openPopup="openPopup" />
+  <Header :page="'msklad-erp'" :openPopup="openPopup" />
   <IntroMs :openPopup="openPopup" />
   <Presentation :openPopup="openPopup" />
   <Benefits :openPopup="openPopup" />

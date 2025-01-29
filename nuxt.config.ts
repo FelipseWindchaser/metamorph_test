@@ -4,7 +4,6 @@ import { resolve } from "path";
 const projectRootDir = resolve(__dirname);
 
 export default defineNuxtConfig({
-  
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
 
@@ -12,13 +11,15 @@ export default defineNuxtConfig({
     rootAttrs: {
       class: "main",
     },
-    // head: {
-    //   meta: [{
-    //     name:'preview',
-    //     content:
-    //   }]
-    // }
+
+    head: {
+      title: "Фулфилмент для маркетплейсов в Армении | Metamorph.group",
+      meta: [
+        {
     
+        },
+      ],
+    },
   },
 
   components: [

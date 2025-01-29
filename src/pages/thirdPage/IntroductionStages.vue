@@ -2,7 +2,7 @@
   <section class="introduction-stages">
     <div class="introduction-stages_text-container">
       <p class="introduction-stages_title">
-        Этапы внедрения «МойСклад» в бизнес
+        Этапы внедрения «Мой Склад» в бизнес
       </p>
     </div>
     <div class="introduction-stages_cards-wrapper">
