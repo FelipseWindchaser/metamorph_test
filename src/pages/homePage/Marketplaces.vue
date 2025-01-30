@@ -95,7 +95,7 @@
     <div></div>
     <a class="ms-link" href="https://metamorph.group/mp-marketing/">
       <button class="marketplaces-and-fulfillment_button" type="button">
-        Перейти
+        Хочу маркетинг на МП
       </button>
     </a>
   </section>
