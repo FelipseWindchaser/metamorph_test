@@ -93,7 +93,7 @@
       </div>
     </div>
     <div></div>
-    <a class="ms-link" href="/page-3">
+    <a class="ms-link" href="https://metamorph.group/mp-marketing/">
       <button class="marketplaces-and-fulfillment_button" type="button">
         Перейти
       </button>
