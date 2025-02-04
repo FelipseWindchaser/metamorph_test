@@ -11,7 +11,7 @@
                 src="../../static/img/met-images/phone-call_icon.svg"
                 alt="phone-icon"
               />
-              <p class="footer_contacts_text">+374 91 59 8338</p>
+              <p class="footer_contacts_text">+374 99 788 409</p>
             </div>
             <div class="footer_contacts_work-time footer_contacts">
               <img
@@ -27,7 +27,7 @@
                 src="../../static/img/met-images/email_icon.svg"
                 alt="email_icon"
               />
-              <p class="footer_contacts_text">vvx@metamorph.group</p>
+              <p class="footer_contacts_text">info@metamorph.group</p>
             </div>
             <div class="footer_contacts_address footer_contacts">
               <p class="footer_contacts_text">
