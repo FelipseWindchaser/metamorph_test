@@ -42,6 +42,7 @@ defineProps<{
   align-items: flex-start;
   padding: 0;
   width: 100%;
+  cursor: pointer;
 }
 .accordion_card-wrapper {
   align-items: flex-start;
@@ -79,6 +80,7 @@ defineProps<{
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  cursor: text;
 }
 .hidden-answer {
   display: none;
