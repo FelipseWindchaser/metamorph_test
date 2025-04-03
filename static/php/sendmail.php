@@ -23,9 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Список email-адресов, куда нужно отправить письмо
         $recipients = [
-            "vvx@metamorph.group",
-            "avk@metamorph.group", 
-            "snr@metamorph.group"
+            "felipsesolaris@gmail.com",
+         
         ];
 
         // Формируем сообщение

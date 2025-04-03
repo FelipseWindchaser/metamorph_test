@@ -51,6 +51,15 @@
             v-model="formData.email"
             required
           />
+          <textarea
+            class="popup_form-input popup_form-textarea"
+            type="text"
+            placeholder="Хочу получить услугу"
+            v-model="formData.message"
+            maxlength="300"
+            required
+          >
+          </textarea>
           <div class="popup_form-checkbox_wrapper">
             <input class="popup_form-checkbox" type="checkbox" checked />
             <p class="popup_form-checkbox_text">
@@ -86,10 +95,12 @@ const formData = ref<{
   name: string;
   email: string;
   phone: string;
+  message: string;
 }>({
   name: "",
   email: "",
   phone: "",
+  message: "",
 });
 
 const submitForm = async () => {
@@ -144,7 +155,7 @@ const submitForm = async () => {
   justify-content: center;
   align-items: center;
   width: 618px;
-  height: 471px;
+  min-height: 530px;
   border-radius: 24px;
   background: var(--white, #fff);
   z-index: 9999;
@@ -196,6 +207,10 @@ const submitForm = async () => {
   border: 1px solid var(--grey-stroke, #dfdfdf);
   background: var(--white, #fff);
 }
+.popup_form-textarea {
+  height: 100px;
+  resize: none;
+}
 .popup_form-input::placeholder {
   color: var(--grey-secondary, #b0b0b0);
   font-family: "Noto Sans";
@@ -240,7 +255,7 @@ const submitForm = async () => {
   cursor: pointer;
   opacity: 0.7;
 }
-@media (min-width: 320px) and (max-width: 680px) {
+@media (min-width: 375px) and (max-width: 680px) {
   .popup {
     display: none;
     justify-content: center;
@@ -282,6 +297,63 @@ const submitForm = async () => {
   }
   .popup_form-checkbox {
     align-self: center;
+  }
+  .popup_form-button {
+    font-size: 18px;
+  }
+  .popup_cross-icon {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 16px;
+  }
+  .active {
+    display: flex;
+  }
+  .popup_overlay {
+    background-color: #000c;
+    opacity: 0.5;
+    width: 100vw;
+    height: calc(100vh + 200px);
+    position: absolute;
+    z-index: 999;
+  }
+  .popup_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 49px 20px 24px;
+    height: 434px;
+    border-radius: 24px;
+    background: var(--white, #fff);
+    z-index: 9999;
+  }
+  .popup_title {
+    color: #181818;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 41.6px */
+    padding-bottom: 30px;
+  }
+  .popup_form-checkbox {
+    align-self: center;
+  }
+  .popup_form-input {
+    width: 100%;
   }
   .popup_form-button {
     font-size: 18px;

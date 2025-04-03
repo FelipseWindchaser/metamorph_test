@@ -17,19 +17,19 @@
           <a class="header_menu-link" href="#fulfillment-advantages"
             >Преимущества</a
           >
-          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+          <a href="#accordion" class="header_menu-link">FAQ</a>
           <div class="header_menu-container">
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/mp-marketing/"
               target="_blank"
-              >Маркетинг на маркетплейсах</a
+              >О маркетинге</a
             >
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/msklad-erp/"
               target="_blank"
-              >МойСклад в Армении</a
+              >О "МойСклад"</a
             >
           </div>
 
@@ -57,25 +57,23 @@
       </a>
       <nav class="header_nav">
         <div class="header_menu">
-          <a class="header_menu-link" href="#service">Услуги по продвижению</a>
+          <a class="header_menu-link" href="#service">Продвижение</a>
           <a class="header_menu-link" href="#advantages">Преимущества</a>
-          <a class="header_menu-link" href="#maintenance">Этапы сопровождения</a
-          ><a class="header_menu-link" href="#results"
-            >Результаты продвижения</a
-          >
-          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+          <a class="header_menu-link" href="#maintenance">Сопровождение</a
+          ><a class="header_menu-link" href="#results">Результаты</a>
+          <a href="#accordion" class="header_menu-link">FAQ</a>
           <div class="header_menu-container">
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/mp-marketing/"
               target="_blank"
-              >Маркетинг на маркетплейсах</a
+              >О маркетинге</a
             >
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/msklad-erp/"
               target="_blank"
-              >МойСклад в Армении</a
+              >О "Мойсклад"</a
             >
           </div>
 
@@ -104,25 +102,24 @@
       <nav class="header_nav">
         <div class="header_menu">
           <a class="header_menu-link" href="#presentation"
-            >МойСклад - отличный выбор для бизнеса</a
+            >МойСклад для бизнеса</a
           >
           <a class="header_menu-link" href="#advantages">Преимущества</a>
-          <a class="header_menu-link" href="#capabilities"
-            >Подробнее о плюсах внедрения сервиса</a
+          <a class="header_menu-link" href="#capabilities">Плюсы сервиса</a
           ><a class="header_menu-link" href="#pricing">Тарифные планы</a>
-          <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+          <a href="#accordion" class="header_menu-link">FAQ</a>
           <div class="header_menu-container">
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/mp-marketing/"
               target="_blank"
-              >Маркетинг на маркетплейсах</a
+              >О маркетинге</a
             >
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/msklad-erp/"
               target="_blank"
-              >МойСклад в Армении</a
+              >О "Мойсклад"</a
             >
           </div>
 
@@ -377,7 +374,8 @@ const closeNav = () => {
   line-height: 130%;
   font-weight: 400;
   /* text-align: center; */
-  max-width: 140px;
+  /* max-width: 140px; */
+  text-wrap: nowrap;
 }
 .link-bold {
   font-weight: bold;
@@ -393,7 +391,7 @@ const closeNav = () => {
     gap: 20px;
   }
   .header_menu-link {
-    max-width: 140px;
+    /* max-width: 140px; */
   }
   .header_menu-container {
     display: flex;

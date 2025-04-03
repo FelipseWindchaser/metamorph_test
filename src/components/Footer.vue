@@ -5,14 +5,17 @@
         <div class="footer_text-content_wrapper">
           <h4 class="footer_title">Остались вопросы? — Свяжитесь с нами</h4>
           <div class="footer_contacts-container">
-            <div class="footer_contacts_phone footer_contacts">
+            <a
+              href="tel:+37499788409"
+              class="footer_contacts_phone footer_contacts footer_link"
+            >
               <img
                 class="footer_contacts_phone-icon"
                 src="../../static/img/met-images/phone-call_icon.svg"
                 alt="phone-icon"
               />
               <p class="footer_contacts_text">+374 99 788 409</p>
-            </div>
+            </a>
             <div class="footer_contacts_work-time footer_contacts">
               <img
                 class="footer_contacts_phone-icon"
@@ -21,14 +24,17 @@
               />
               <p class="footer_contacts_text">9:00 — 18:00</p>
             </div>
-            <div class="footer_contacts_email footer_contacts">
+            <a
+              href="mailto:info@metamorph.group"
+              class="footer_contacts_email footer_contacts footer_link"
+            >
               <img
                 class="footer_contacts_phone-icon"
                 src="../../static/img/met-images/email_icon.svg"
                 alt="email_icon"
               />
               <p class="footer_contacts_text">info@metamorph.group</p>
-            </div>
+            </a>
             <div class="footer_contacts_address footer_contacts">
               <p class="footer_contacts_text">
                 г. Ереван, 3-й квартал Давташен, 19/2
@@ -79,7 +85,7 @@
         </form>
       </div>
       <div>
-        <picture class="footer_image-container">
+        <!-- <picture class="footer_image-container">
           <source
             srcset="../../static/img/met-images/map_mob.jpg"
             media="(max-width: 680px)"
@@ -90,7 +96,29 @@
             src="../../static/img/met-images/map.jpg"
             alt="logo"
           />
-        </picture>
+        </picture> -->
+
+        <div class="footer_map" style="position: relative; overflow: hidden">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?pt=44.493421%2C40.215826&z=16"
+            width="710"
+            height="750"
+            frameborder="0"
+            allowfullscreen="true"
+            loading="lazy"
+            style="position: relative"
+          ></iframe>
+        </div>
+        <!-- <iframe
+          class="footer_map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.35732892524!2d44.49315324229267!3d40.2152608863619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd5645bdf13d%3A0x413b61368f13cc2d!2zWWVnaHZhcmQgSGlnaHdheSwgWWVyZXZhbiAwMDU0LCDQkNGA0LzQtdC90LjRjw!5e0!3m2!1sru!2sru!4v1738567667620!5m2!1sru!2sru"
+          width="710"
+          height="100%"
+          style="border: 0"
+          allowfullscreen="false"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe> -->
       </div>
     </div>
   </footer>
@@ -148,6 +176,13 @@ const submitForm = async () => {
 .footer_pink {
   background: linear-gradient(to right, #2381e3, #7b73e9, #f87ec9);
 }
+.footer_map {
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-wrapper {
   display: flex;
@@ -167,6 +202,9 @@ const submitForm = async () => {
   line-height: normal;
   margin: 0;
 }
+.footer_link {
+  text-decoration: none;
+}
 .footer_title {
   color: #fff;
   font-family: "Noto Sans";
@@ -181,6 +219,7 @@ const submitForm = async () => {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: max-content;
 }
 .footer_contacts-container {
   display: flex;
@@ -287,6 +326,10 @@ const submitForm = async () => {
     padding: 35px 16px 44px;
     gap: 63px;
   }
+  .footer_map {
+    width: 600px;
+    height: 750px;
+  }
   .footer_form {
     max-width: 375px;
     width: 100%;
@@ -298,9 +341,9 @@ const submitForm = async () => {
   .footer_contacts_text {
     font-size: 17px;
   }
-  .footer_contacts-container {
+  /* .footer_contacts-container {
     align-items: center;
-  }
+  } */
   .footer_text-container {
     align-items: center;
   }
@@ -338,6 +381,10 @@ const submitForm = async () => {
     flex-direction: column;
     align-items: center;
   }
+  .footer_map {
+    width: 323px;
+    height: 370px;
+  }
   .footer_form {
     width: 100%;
     max-width: 375px;
@@ -374,6 +421,11 @@ const submitForm = async () => {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer_map {
+    max-width: 300px;
+    width: 100%;
+    height: 370px;
   }
   .footer_form {
     width: 100%;
