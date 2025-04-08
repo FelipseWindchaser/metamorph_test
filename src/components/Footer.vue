@@ -6,7 +6,7 @@
           <h4 class="footer_title">Остались вопросы? — Свяжитесь с нами</h4>
           <div class="footer_contacts-container">
             <a
-              href="tel:+37499788409"
+              href="tel:+37498454178"
               class="footer_contacts_phone footer_contacts footer_link"
             >
               <img
@@ -14,7 +14,7 @@
                 src="../../static/img/met-images/phone-call_icon.svg"
                 alt="phone-icon"
               />
-              <p class="footer_contacts_text">+374 99 788 409</p>
+              <p class="footer_contacts_text">+374 98 45 41 78</p>
             </a>
             <div class="footer_contacts_work-time footer_contacts">
               <img
@@ -39,6 +39,25 @@
               <p class="footer_contacts_text">
                 г. Ереван, 3-й квартал Давташен, 19/2
               </p>
+              <div class="footer_contacts_details-container">
+                <p class="footer_contacts_text footer_contacts_details-text">
+                  ИП «Аветисян Тигран Владимирович»
+                </p>
+                <p class="footer_contacts_text footer_contacts_details-text">
+                  Адрес регистрации: Армения, Ереван, Центр, ул. Налбандян, дом
+                  110, кв. 42.
+                </p>
+                <p class="footer_contacts_text footer_contacts_details-text">
+                  ИНН: 40124249 Наименование банка: ОАО "АКБА БАНК" р/с
+                  220551083284000
+                </p>
+                <p class="footer_contacts_text footer_contacts_details-text">
+                  Наименование банка: ОАО "АКБА БАНК"
+                </p>
+                <p class="footer_contacts_text footer_contacts_details-text">
+                  р/с 220551083284000
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +121,7 @@
           <iframe
             src="https://yandex.ru/map-widget/v1/?pt=44.493421%2C40.215826&z=16"
             width="710"
-            height="750"
+            height="953"
             frameborder="0"
             allowfullscreen="true"
             loading="lazy"
@@ -193,6 +212,12 @@ const submitForm = async () => {
   padding: 66px 0 77px;
   gap: 63px;
 }
+.footer_contacts_address {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
 .footer_contacts_text {
   color: #fff;
   font-family: "Noto Sans";
@@ -201,6 +226,18 @@ const submitForm = async () => {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  align-self: flex-start;
+}
+.footer_contacts_details-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 7px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.footer_contacts_details-text {
+  font-size: 16px;
 }
 .footer_link {
   text-decoration: none;
@@ -219,7 +256,7 @@ const submitForm = async () => {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: max-content;
+  /* width: max-content; */
 }
 .footer_contacts-container {
   display: flex;
@@ -250,6 +287,7 @@ const submitForm = async () => {
   opacity: 0.7;
 }
 .footer_form-input {
+  width: 100%;
   border-radius: 16px;
   border: none;
   outline: none;
@@ -362,9 +400,7 @@ const submitForm = async () => {
     width: 100%;
     background: linear-gradient(152deg, #3792ff 5.77%, #0041c8 90.55%);
   }
-  .footer-wrapper {
-    flex-direction: column;
-  }
+
   .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -375,6 +411,7 @@ const submitForm = async () => {
   }
   .footer_text-container {
     align-items: center;
+    gap: 0;
   }
   .footer_text-content_wrapper {
     display: flex;
@@ -406,6 +443,7 @@ const submitForm = async () => {
   .footer-wrapper {
     flex-direction: column;
   }
+
   .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -416,11 +454,17 @@ const submitForm = async () => {
   }
   .footer_text-container {
     align-items: center;
+    width: 100%;
+    gap: 0;
   }
   .footer_text-content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+  .footer_contacts-container {
+    max-width: 100%;
   }
   .footer_map {
     max-width: 300px;

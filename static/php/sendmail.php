@@ -23,14 +23,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Список email-адресов, куда нужно отправить письмо
         $recipients = [
-            "felipsesolaris@gmail.com",
-         
+            "vvx@metamorph.group",
+            "avk@metamorph.group",
+            "snr@metamorph.group"
         ];
 
         // Формируем сообщение
-        $subject = "Новая заявка с сайта metamorph";
-        $body = "Имя: $name\nEmail: $email\nТелефон: $phone\nСообщение: $message";
-        $headers = "From: no-reply@metamorph.com";
+        $subject = "=?UTF-8?B?".base64_encode("Новая заявка с сайта metamorph")."?=";
+        
+        // Формируем тело письма в HTML формате
+        $body = "
+        <html>
+        <head>
+            <title>Новая заявка с сайта metamorph</title>
+        </head>
+        <body>
+            <p><strong>Новая заявка с сайта metamorph</strong></p>
+            <p><strong>Имя:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Телефон:</strong> $phone</p>
+            <p><strong>Сообщение:</strong> $message</p>
+        </body>
+        </html>";
+
+        // Расширенные заголовки
+        $headers = array(
+            'MIME-Version: 1.0',
+            'Content-Type: text/html; charset=UTF-8',
+            'From: Metamorph <no-reply@metamorph.com>',
+            'Reply-To: ' . $email,
+            'X-Mailer: PHP/' . phpversion(),
+            'X-Priority: 1',
+        );
+
+        // Преобразуем массив заголовков в строку
+        $headers = implode("\r\n", $headers);
 
         // Флаг для отслеживания успешной отправки
         $allSent = true;
@@ -44,9 +71,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Результат отправки
         if ($allSent) {
-            echo 'Письма успешно отправлены';
+            echo 'Данные успешно отправлены';
         } else {
-            echo 'Ошибка при отправке писем';
+            echo 'Ошибка при отправке данных';
         }
     } else {
         // Обработка ошибок, если JSON некорректный

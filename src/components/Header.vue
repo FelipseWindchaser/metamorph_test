@@ -23,13 +23,13 @@
               class="header_menu-link link-bold"
               href="https://metamorph.group/mp-marketing/"
               target="_blank"
-              >О маркетинге</a
+              >Маркетинг на МП</a
             >
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/msklad-erp/"
               target="_blank"
-              >О "МойСклад"</a
+              >МойСклад в РА</a
             >
           </div>
 
@@ -65,15 +65,15 @@
           <div class="header_menu-container">
             <a
               class="header_menu-link link-bold"
-              href="https://metamorph.group/mp-marketing/"
+              href="https://metamorph.group"
               target="_blank"
-              >О маркетинге</a
+              >Фулфилмент</a
             >
             <a
               class="header_menu-link link-bold"
               href="https://metamorph.group/msklad-erp/"
               target="_blank"
-              >О "Мойсклад"</a
+              >МойСклад в РА</a
             >
           </div>
 
@@ -111,15 +111,15 @@
           <div class="header_menu-container">
             <a
               class="header_menu-link link-bold"
-              href="https://metamorph.group/mp-marketing/"
+              href="https://metamorph.group"
               target="_blank"
-              >О маркетинге</a
+              >Фулфилмент</a
             >
             <a
               class="header_menu-link link-bold"
-              href="https://metamorph.group/msklad-erp/"
+              href="https://metamorph.group/mp-marketing/"
               target="_blank"
-              >О "Мойсклад"</a
+              >Маркетинг на МП</a
             >
           </div>
 
@@ -224,13 +224,13 @@
             class="header_menu-link link-bold"
             href="https://metamorph.group/mp-marketing/"
             target="_blank"
-            >Маркетинг на маркетплейсах</a
+            >Маркетинг на МП</a
           >
           <a
             class="header_menu-link link-bold"
             href="https://metamorph.group/msklad-erp/"
             target="_blank"
-            >МойСклад в Армении</a
+            >МойСклад в РА</a
           >
           <!-- <a href="https://metamorph.group/" class="header_menu-link">Главная</a>
         <a class="header_menu-link" :href="pageLink">О нас</a>
@@ -250,23 +250,23 @@
         v-else-if="page === 'mp-marketing'"
         :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`"
       >
-        <a class="header_menu-link" href="#service">Услуги по продвижению</a>
+        <a class="header_menu-link" href="#service">Продвижение</a>
         <a class="header_menu-link" href="#advantages">Преимущества</a>
-        <a class="header_menu-link" href="#maintenance">Этапы сопровождения</a
-        ><a class="header_menu-link" href="#results">Результаты продвижения</a>
-        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+        <a class="header_menu-link" href="#maintenance">Сопровождение</a
+        ><a class="header_menu-link" href="#results">Результаты</a>
+        <a href="#accordion" class="header_menu-link">FAQ</a>
         <div class="header_menu-container_mob">
           <a
             class="header_menu-link link-bold"
-            href="https://metamorph.group/mp-marketing/"
+            href="https://metamorph.group"
             target="_blank"
-            >Маркетинг на маркетплейсах</a
+            >Фулфилмент</a
           >
           <a
             class="header_menu-link link-bold"
             href="https://metamorph.group/msklad-erp/"
             target="_blank"
-            >МойСклад в Армении</a
+            >МойСклад в РА</a
           >
         </div>
       </div>
@@ -275,25 +275,24 @@
         :class="`header_menu_mob ${isNavOpen ? 'active' : ''}`"
       >
         <a class="header_menu-link" href="#presentation"
-          >МойСклад - отличный выбор для бизнеса</a
+          >МойСклад для бизнеса</a
         >
         <a class="header_menu-link" href="#advantages">Преимущества</a>
-        <a class="header_menu-link" href="#capabilities"
-          >Подробнее о плюсах внедрения сервиса</a
+        <a class="header_menu-link" href="#capabilities">Плюсы сервиса</a
         ><a class="header_menu-link" href="#pricing">Тарифные планы</a>
-        <a href="#accordion" class="header_menu-link">Вопросы и ответы</a>
+        <a href="#accordion" class="header_menu-link">FAQ</a>
         <div class="header_menu-container_mob">
+          <a
+            class="header_menu-link link-bold"
+            href="https://metamorph.group"
+            target="_blank"
+            >Фулфилмент</a
+          >
           <a
             class="header_menu-link link-bold"
             href="https://metamorph.group/mp-marketing/"
             target="_blank"
-            >Маркетинг на маркетплейсах</a
-          >
-          <a
-            class="header_menu-link link-bold"
-            href="https://metamorph.group/msklad-erp/"
-            target="_blank"
-            >МойСклад в Армении</a
+            >Маркетинг на МП</a
           >
         </div>
       </div>
@@ -347,7 +346,7 @@ const closeNav = () => {
 }
 .header_menu-container {
   display: flex;
-  gap: 45px;
+  gap: 20px;
   padding-left: 30px;
 }
 .header_menu-button {
@@ -390,12 +389,10 @@ const closeNav = () => {
   .header_menu {
     gap: 20px;
   }
-  .header_menu-link {
-    /* max-width: 140px; */
-  }
+
   .header_menu-container {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding-left: 30px;
     max-width: 300px;
     width: 100%;
